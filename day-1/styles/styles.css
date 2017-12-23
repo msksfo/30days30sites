@@ -1,0 +1,94 @@
+
+body {
+	font-family: 'Cormorant', serif;
+}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.bg-1 {
+	background-color: #e6e2e8;
+}
+
+.border-bottom {
+	border: 3px double #030c28;
+}
+
+.bg-2 {
+	background-color: #f9f9f9;
+}
+
+.bg-3 {
+	background-color: #030c28;
+	background-color: #82718f;
+}
+
+.bg-4 {
+	background-color: #030c28;
+	color: #f9f9f9;
+}
+
+.light {
+	color: #f9f9f9;
+}
+
+.profilepic {
+	width: 200px;
+	border: 2px solid white;
+	margin-top: .5rem;
+	margin-bottom: 2rem;
+}
+
+i {
+	margin-right: 10px;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+.findme {
+	margin-bottom: 3rem;
+	color: #f9f9f9;
+}
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 1rem;
+	letter-spacing: 5px;
+	background-color #030c28;
+}
+
+.bg-blue {
+	background-color: #030c28;
+}
+
+.navbar-white {
+	color: #f9f9f9;
+}
+
+
+.navbar-brand, .nav-link {
+	color: #f9f9f9;
+}
+
+
+
+
+
+
+
