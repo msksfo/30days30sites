@@ -17,9 +17,9 @@
 		<link rel='stylesheet' type='text/css' href='styles/styles.css'>
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset='125'>
 		
-		<nav class="navbar navbar-expand-lg navbar-dark" style='background-color: #030c28;'>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style='background-color: #030c28;'>
 		  <a class="navbar-brand" href="#">TangoEcho Design</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -27,8 +27,8 @@
 
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 		    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#who">WHO<span class="sr-only">(current)</span></a>
+		      <li class="nav-item ">
+		        <a class="nav-link" href="#who">WHO</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#what">WHAT</a>
@@ -49,53 +49,51 @@
 		</div>
 
 		<div class='container-fluid text-center bg-2'>
-			<h3 id='what'>What Am I?</h3>
-			<p>I am an aspiring Web Developer, also interested in UX/UI design. I strive to write clean, scalable, and modular code. I have a passion for learning, in general. A passion for creative endeavors in particular. I'm adaptable, focused, and resourceful. Have ideas for your website? Bring them to me and I'll help you bring them to life.</p>
+			<div class='row justify-content-center'>
+				<div class='col col-md-8 col-lg-6'>
+					<h3 id='what'>What Am I?</h3>
+					<p>I am an aspiring Web Developer, also interested in UX/UI design. I strive to write clean, scalable, and modular code. I have a passion for learning, in general. A passion for creative endeavors in particular. I'm adaptable, focused, and resourceful. Have ideas for your website? Bring them to me and I'll help you bring them to life.</p>
 
-			<a href='#' class='btn btn-secondary btn-lg'><i class='fa fa-search' aria-hidden='true'></i>Search</a>
+					<a href='#' class='btn btn-secondary btn-lg'><i class='fa fa-search' aria-hidden='true'></i>Search</a>
+				</div>
+			</div>
 		</div>
 
 		<div class='container-fluid text-center bg-3'>
 			<h3 id='where' class='findme' >Where To Find Me?</h3>
 			
-				<div class='card-group'>
+			<div class='card-deck'>
 
-				<div class='col-md-4'>
-					<div class='card'>
-						<div class='card-body'>
-							<h4>Coding</h4>
-							<p>I made the decision to make a career change into Web Development and have been teaching myself with books, online courses, video tutorials, anything I can get my hands on. Here, our cat Cirrus (named after the plane) poses, as if taking credit for completing the free code camp calculator project.</p>
-						</div>
-						<img class='img-thumbnail img-responsive' src='images/findme4.jpg' alt='Cirrus instagram photo of completed free code camp calculator program.'>
+				<div class='card'>
+					<div class='card-body'>
+						<h4>Coding</h4>
+						<p>I made the decision to make a career change into Web Development and have been teaching myself with books, online courses, video tutorials, anything I can get my hands on. Here, our cat Cirrus (named after the plane) poses, as if taking credit for completing the free code camp calculator project.</p>
 					</div>
+					<img class='img-thumbnail img-responsive' src='images/findme4.jpg' alt='Cirrus instagram photo of completed free code camp calculator program.'>
 				</div>
-
-				<div class='col-md-4'>
-					<div class='card'>
-						<div class='card-body'>
-							<h4>Travelling</h4>
-							<p>I love travelling and I love photography, so when I'm travelling (here in Antarctica) you will rarely find me without a camera in hand.</p>
-						</div>
-						<img class='img-thumbnail img-responsive' src='images/findme2.jpg' alt='Tia taking photos in Antarctica.'>
+				
+				<div class='card'>
+					<div class='card-body'>
+						<h4>Travelling</h4>
+						<p>I love travelling and I love photography, so when I'm travelling (here in Antarctica) you will rarely find me without a camera in hand. One of my favorite programming projects thus far has been creating a photo gallery of my favorite images from each continent of our travels. The name of the project is Around The World. You can see it <a href='https://msksfo.github.io/AroundTheWorld/' target='_blank'>here</a>.</p>
 					</div>
+					<img class='img-thumbnail img-responsive' src='images/findme2.jpg' alt='Tia taking photos in Antarctica.'>
 				</div>
-
-				<div class='col-md-4'>
-					<div class='card'>
-						<div class='card-body'>
-							<h4>Flying</h4>
-							<p>My husband is a pilot, with a huge love of warbirds. Here I sit relaxing and enjoying the view while he flies us around the California Bay Area in a 1942 Vultee BT-13.</p>
-						</div>
-						<img class='img-thumbnail img-responsive' src='images/findme3.jpg' alt='Aerial shot of Alex & Tia in the BT-13 flying over Livermore, California.'>
+				
+				<div class='card'>
+					<div class='card-body'>
+						<h4>Flying</h4>
+						<p>My husband is a pilot, with a huge love of warbirds. Here I sit relaxing and enjoying the view while he flies us around the California Bay Area in a 1942 Vultee BT-13. This is the plane flown by the WASP in World War 2. Never heard of them? Neither had I, which is a true shame! You can read about them <a href='https://en.wikipedia.org/wiki/Women_Airforce_Service_Pilots' target='_blank'>here</a>.</p>
 					</div>
+					<img class='img-thumbnail img-responsive' src='images/findme3.jpg' alt='Aerial shot of Alex & Tia in the BT-13 flying over Livermore, California.'>
 				</div>
-			</div>
-
+		
+			</div> <!-- close the card deck -->
 			 
-		</div>
+		</div> <!-- close where to find me section -->
 
 		<footer class='container-fluid bg-4 text-center'>
-			<p><a href='https://msksfo.github.io/TangoEchoDesign/' class='light'>TangoEcho Design</a> &copy 2017. All Rights Reserved</p>
+			<p><a href='https://msksfo.github.io/TangoEchoDesign/' class='light'>TangoEcho Design</a> &copy; 2017. All Rights Reserved</p>
 		</footer>
 
 

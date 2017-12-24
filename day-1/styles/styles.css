@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Cormorant', serif;
+	padding-top: 60px;
+  	position: relative;
 }
 
 .container-fluid {
@@ -61,11 +63,8 @@ i {
 	margin-right: 10px;
 }
 
-.bg-2 p {
-	padding: 10px 300px;
-}
-
 /* ====================================== where to find me section styles =====================*/
+
 
 .bg-3 {
 	background-color: #030c28;

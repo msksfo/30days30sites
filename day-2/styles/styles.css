@@ -1,0 +1,165 @@
+body, html {
+	height: 100%;
+	margin-0;
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.script {
+	font-family: 'Great Vibes', cursive;
+}
+
+.section-text {
+	letter-spacing: 3px;
+}
+
+h2.script {
+	font-size: 2.5rem;
+	letter-spacing: 8px;
+}
+
+h2.big-day {
+	font-size: 2rem;
+	letter-spacing: 8px;
+}
+
+/* ========================= background images ========================= */
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+	position: relative;
+	opacity: 0.7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	/* 
+		background-attachment:fixed ----> parallax
+		background-attachment:scroll ----> normal 
+	*/
+}
+
+.pimg1 {
+	background-image: url('../images/rosepetals.jpg');
+	min-height: 100%;
+}
+
+.pimg2 {
+	background-image: url('../images/woodenheart.jpg');
+	min-height: 100%;
+	background-position: left;
+}
+
+
+.pimg3 {
+	background-image: url('../images/citystreet.jpg');
+	min-height: 100%;
+}
+
+.pimg4 {
+	background-image: url('../images/img4.jpg');
+	min-height: 100%;
+}
+
+/* ================================================================== */
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 9px;
+}
+
+.ptext1 {
+	top: 75%;
+	font-size: 3rem;
+}
+
+.ptext2 {
+	width: 90%;
+	left: 10%;
+	font-size: 4rem;
+}
+
+button.section-text {
+	padding: 15px;
+	border-radius: 12px;
+	background-color: #b89cc3;
+	background-color: #cb3273;
+	color: #fff;
+	border: 1px solid #fff;
+	transition: all .2s ease;
+}
+
+button.section-text:hover {
+	background-color: #e490b4;
+	transition: all .2s ease;
+
+}
+
+.ptext4 {
+	top: 70%;
+}
+
+.border {
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+.trans {
+	background-color: transparent;
+}
+
+/* =============================== rsvp modal ============================= */
+
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ==================================== Media Queries =================================*/
+
+@media all and (max-width: 568px){
+	.pimg1, .pimg2, .pimg3, .pimg4 {
+		background-attachment: scroll;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
