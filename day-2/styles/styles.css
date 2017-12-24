@@ -134,11 +134,42 @@ button.section-text:hover {
 /* =============================== rsvp modal ============================= */
 
 .modal {
-	position: absolute;
+	display: none;
+	position: fixed;
+	z-index: 3;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	overflow: auto;
+	background-color: rgba(228,144,180, .9);
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.modalContent {
+	padding: 10px;
+	background-color: #fff;
+	width: 50%;
+	height: 50%;
+	margin: 10% auto;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+form {
+	clear: both;
+	margin: 0 auto;
+}
+
+.close {
+	float: right;
+	font-size: 3.3rem;
+}
+
+.close:hover, .close:focus {
+	color: pink;
+	text-decoration: none;
+	cursor: pointer;
+
 }
 
 /* ==================================== Media Queries =================================*/
