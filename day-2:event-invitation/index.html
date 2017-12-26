@@ -87,32 +87,35 @@
 
 		<div id='modal' class='modal'>
 			<div id='modalContent' class='modalContent'>
-				<span class='close' id='closeButton'>&times;</span>
-				<form>
-					<label for='name'>Name</label>
-					<input type='text' placeholder='name'>
 
-					<p>Are you able to attend?
-						<input type='radio' id='yes' name='attendance' value='yes'>
-						<label for='yes'>Yes</label>
+				<div class='form-container'>
+					<span class='close' id='closeButton'>&times;</span>
+					<form id='rsvp-form'>
+						<label class='name-label' for='name'>Name</label>
+						<input type='text' placeholder='name' required>
 
-						<input type='radio' id='no' name='attendance' value='no'>
-						<label for='no'>No</label>
-					</p>
+						<p>Are you able to attend?
+							<input id='attending' type='radio' id='yes' name='attendance' value='yes' required>
+							<label for='yes'>Yes</label>
 
-					<p>What would you like to eat?
-						<input type='radio' id='burrito' name='dinner' value='burrito'>
-						<label for='burrito'>Burrito</label>
+							<input id='not-attending' type='radio' id='no' name='attendance' value='no'>
+							<label for='no'>No</label>
+						</p>
 
-						<input type='radio' id='bowl' name='dinner' value='bowl'>
-						<label for='bowl'>Burrito Bowl</label>
-					</p>
+						<p>What would you like to eat?
+							<input id='dinner-choice' type='radio' id='burrito' name='dinner' value='burrito'>
+							<label for='burrito'>Burrito</label>
 
-					<input id='submitButton' type='submit'>
-				</form>
+							<input type='radio' id='bowl' name='dinner' value='bowl'>
+							<label for='bowl'>Burrito Bowl</label>
+						</p>
 
-			</div>
-		</div>
+						<input id='submitButton' type='submit'>
+					</form>
+				</div> <!-- close form container -->
+
+			</div> <!--- close modal content -->
+		</div> <!-- close modal -->
 
 		
 
