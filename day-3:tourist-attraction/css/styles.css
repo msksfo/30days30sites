@@ -1,0 +1,96 @@
+.about {
+	background-color: #d6d9d1;
+	padding: 1.5rem;
+}
+
+article {
+	border: 2px solid ivory;
+	padding-top: 1rem;
+}
+
+.section-light {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	background-color: #0d4744;
+	background-color: ivory;
+}
+
+.section-dark {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: #010D16;
+}
+
+.tours-section {
+	background-color: #d6d9d1;
+	padding: 3rem;
+}
+
+.tours-inner-section {
+	background-color: ivory;
+	border: 5px double #c4142b;
+	padding: 2rem;
+}
+
+.reading-recommendation-box {
+	border: 1px solid #944570;
+}
+
+.footer {
+	background-color: #010d16;
+	color: #d9d1d6;
+	padding: 3rem;
+}
+
+a.light {
+	text-decoration: none;
+	color: #d9d1d6;
+}
+a.light:hover {
+	color: #c24eab;
+}
+
+h5 {
+	padding-bottom: .2rem;
+}
+ul {
+	padding: 1rem;
+}
+
+@media all and (min-width: 768px){
+	article {
+		border-right: 0;
+		border-top: 0;
+		border-bottom: 0;
+		border-left: 4px double ivory;
+		padding-top: 0;
+	}
+
+	.tours-inner-section {
+		padding: 2rem 5rem;
+	}
+}
+
+
+
+@media all and (min-width: 992px){
+	
+	.tours-inner-section {
+		padding: 2rem 10rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
