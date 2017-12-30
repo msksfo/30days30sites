@@ -2,7 +2,7 @@
 
 body, html {
 	height: 100%;
-	margin-0;
+	margin:0;
 	font-size: 16px;
 	font-family: 'Oswald', sans-serif;
 	line-height: 1.8em;
@@ -188,8 +188,17 @@ button.section-text:hover {
 /* ==================================== Media Queries =================================*/
 
 @media all and (max-width: 568px){
+
 	.pimg1, .pimg2, .pimg3, .pimg4 {
 		background-attachment: scroll;
+		overflow: hidden;
+	}
+
+	.ptext2 {
+		border: 1px solid purple;
+		width: 100%;
+		top: 80%;
+		font-size: 3rem;
 	}
 }
 
