@@ -1,0 +1,334 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #bbbbbb;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+	padding: 1rem;
+	margin: 2rem;
+	border: 2rem solid #eeeeee;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ============================ headline image section =========================*/
+
+h1 {
+	color: #35363D;
+	font-size: 3rem;
+	margin-bottom: 0;
+	font-family: 'Cinzel Decorative', cursive;
+	text-align: center;
+}
+
+h2 {
+	color: #35363D;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+span.highlight {
+	color: #DF7F73;
+}
+
+.wrapper > h4 {
+	text-align: center;
+	color: #842432;
+}
+.headline-image-section {
+	padding: 1rem;
+	border: 5px double #bbbbbb;
+	display: flex;
+	flex-direction: column;
+	align-items space-between;
+
+}
+
+.headline-image-section p {
+	display: flex;
+	justify-content: center;
+	align-items center;
+}
+
+.headline-image-wrapper {
+	border 1px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headline-image {
+	width: 100%;
+}
+
+/* =============================== love stinks section ====================== */
+
+.lovestinks {
+	width: 90%;
+	border 1px solid blue;
+	margin-top 6rem; /* add margin top to each section??? */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lovestinks p, .lovestinks h3 { /* do this for each section??? */
+	text-align: center;
+}
+
+.lovestinks p {
+	padding: 0 1rem;
+}
+
+.lovestinks-image-wrapper {
+	padding: 3rem; /* add 3rem padding at 700px? */
+	display: grid;
+	grid-template-columns: 1fr; /* change to 1fr 1fr at 700? */
+	grid-gap: 1rem;
+}
+.lovestinks-image {
+	width: 100%;
+}
+
+.lovestinks-img1, .lovestinks-img2 {
+	border: 1px solid #bbbbbb;
+}
+
+/* =========================== our story section ======================== */
+
+.ourstory {
+	width: 90%;
+	margin-top: 1rem;
+	border 1px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ourstory-grid {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+.ourstory h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	margin-top: 0;
+}
+
+.ourstory-image-wrapper {
+	width: 100%;
+}
+
+.ourstory-image {
+	max-width: 100%
+}
+
+.ourstory-text-wrapper {
+	max-width: 100%;
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+}
+
+.ourstory-text {
+	padding: 0 1rem;
+	text-align: center;
+}
+
+.ourstory-text p {
+	line-height: 1.5;
+}
+
+
+
+/* ================================ testimonials section =================== */
+
+.testimonials {
+	width: 90%;
+	margin-top: 2rem;
+	border 1px solid green;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.testimonials p, .testimonials h3, .quote {
+	text-align: center;
+}
+
+.testimonials p {
+	margin-bottom: 2.3rem;
+}
+
+.testimonials p {
+	padding: 0 1rem;
+}
+
+.testimonials-card {
+	background-color: #bbbbbb;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.testimonials-image-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+
+.testimonials-text {
+	background-color: #428975;
+	color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.testimonials-image {
+	max-width: 100%;
+}
+
+/* ================================ our guarentee ========================= */
+
+.guarentee {
+	width: 90%;
+	margin-top: 3rem;
+	border: 1px solid goldenrod;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.guarentee > p {
+	text-align: center;
+}
+
+p.try-product {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.guarentee-image {
+	width: 100%;
+}
+
+/* ================================ footer ============================= */
+
+footer p {
+	text-align: center;
+	margin-top: 5rem;
+	background-color: rgba(252,194,45, .7);
+	font-size: 1.3rem;
+}
+
+span.happy-poo {
+	font-size: 1.7rem;
+}
+
+/* ===================== partial borders with pseudo elements ======== */
+
+.testimonials:before {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 3rem;
+	margin: 0 auto;
+	border-top: 1px solid rgba(187, 187, 187, .5);
+}
+
+.ourstory:before {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 3rem;
+	margin: 0 auto;
+	border-top: 1px solid rgba(187, 187, 187, .5);
+}
+
+.lovestinks:before {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 3rem;
+	margin: 0 auto;
+	border-top: 1px solid rgba(187, 187, 187, .5);
+}
+/* ============================== media queries ================================ */
+
+@media all and (min-width: 700px){
+	h1 {
+		font-size: 4rem;
+	}
+
+	.headline-image-section {
+		flex-direction: row;
+	}
+
+	.headline-image-section p {
+		align-items: center;
+	}
+
+	.lovestinks-image-wrapper {
+		padding: 3rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.testimonials-card {
+		grid-template-columns: 1fr 1fr;
+		padding: .5rem;
+	}
+
+	.testimonials {
+		margin-top: 6rem;
+	}
+
+	.ourstory{
+		margin-top: 6rem;
+	}
+
+	.ourstory h3 {
+		margin-top: 2rem;
+	}
+
+	.ourstory-text-wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	div.border-right {
+		border-right: 1px solid rgba(0,0, 0, .6);
+		border-right: 1px solid rgba(147,98,213, .6);
+	}
+
+	.guarentee {
+		margin-top: 6rem;
+	}
+
+}
+
+@media all and (min-width: 850px){
+	.testimonials-card {
+			padding: 2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
