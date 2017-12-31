@@ -200,9 +200,9 @@ span.highlight {
 	max-width: 100%;
 }
 
-/* ================================ our guarentee ========================= */
+/* ================================ our guarantee ========================= */
 
-.guarentee {
+.guarantee {
 	width: 90%;
 	margin-top: 3rem;
 	border: 1px solid goldenrod;
@@ -212,7 +212,7 @@ span.highlight {
 	padding: 1rem;
 }
 
-.guarentee > p {
+.guarantee > p {
 	text-align: center;
 }
 
@@ -221,7 +221,7 @@ p.try-product {
 	margin-bottom: 2rem;
 }
 
-.guarentee-image {
+.guarantee-image {
 	width: 100%;
 }
 
@@ -312,7 +312,7 @@ span.happy-poo {
 		border-right: 1px solid rgba(147,98,213, .6);
 	}
 
-	.guarentee {
+	.guarantee {
 		margin-top: 6rem;
 	}
 
