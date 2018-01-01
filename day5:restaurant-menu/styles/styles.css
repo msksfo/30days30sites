@@ -1,13 +1,15 @@
-body {
+body, html {
 	box-sizing: border-box;
 	min-height: 100vh;
 	margin: 0;
+	padding: 0;
 	font-size: 16px;
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.8em;
 }
 
 .home {
+	position: -webkit-sticky;
 	position: sticky;
 	top: -80.4px;
 	z-index: 5;
@@ -92,7 +94,7 @@ nav a:hover {
 
 .about {
 	background-color: #f9f7f7;
-	padding: 1rem;
+	padding: 2rem .5rem;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 1rem;
@@ -395,6 +397,10 @@ footer a:hover {
 	.pimg1 {
 		background-image: url('../images/entrance-cropped.jpg');
 		height: 85vh;
+	}
+
+	.about {
+		padding: 2rem 1rem;
 	}
 
 	footer {

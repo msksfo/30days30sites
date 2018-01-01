@@ -34,10 +34,10 @@ h2.big-day {
 .pimg1, .pimg2, .pimg3, .pimg4 {
 	position: relative;
 	opacity: 0.7;
-	background-position: center;
+	background-position center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 
 	/* 
 		background-attachment:fixed ----> parallax
@@ -48,6 +48,7 @@ h2.big-day {
 .pimg1 {
 	background-image: url('../images/rosepetals.jpg');
 	min-height: 100%;
+	background-position top left;
 }
 
 .pimg2 {
@@ -60,6 +61,7 @@ h2.big-day {
 .pimg3 {
 	background-image: url('../images/citystreet.jpg');
 	min-height: 100%;
+	background-position: top center
 }
 
 .pimg4 {
@@ -71,7 +73,7 @@ h2.big-day {
 
 .section {
 	text-align: center;
-	padding: 50px 80px;
+	padding: 50px 30px; /* change to 80 later */
 }
 
 .section-light {
@@ -100,9 +102,10 @@ h2.big-day {
 }
 
 .ptext2 {
-	width: 90%;
-	left: 10%;
-	font-size: 4rem;
+	border 1px solid purple;
+	width: 100%;
+	top: 80%;
+	font-size: 3rem;
 }
 
 button.section-text {
@@ -187,18 +190,24 @@ button.section-text:hover {
 
 /* ==================================== Media Queries =================================*/
 
-@media all and (max-width: 568px){
+@media all and (min-width: 568px){
 
 	.pimg1, .pimg2, .pimg3, .pimg4 {
-		background-attachment: scroll;
+		background-attachment: fixed;
 		overflow: hidden;
 	}
 
+	.section {
+		padding: 50px 80px;
+	}
+
+}
+
+@media all and (min-width: 700px){
 	.ptext2 {
-		border: 1px solid purple;
-		width: 100%;
-		top: 80%;
-		font-size: 3rem;
+		width: 90%; 
+		left: 10%;
+		font-size: 4rem;
 	}
 }
 
