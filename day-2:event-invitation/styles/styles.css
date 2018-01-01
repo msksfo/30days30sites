@@ -48,7 +48,6 @@ h2.big-day {
 .pimg1 {
 	background-image: url('../images/rosepetals.jpg');
 	min-height: 100%;
-	background-position top left;
 }
 
 .pimg2 {
@@ -61,7 +60,7 @@ h2.big-day {
 .pimg3 {
 	background-image: url('../images/citystreet.jpg');
 	min-height: 100%;
-	background-position: top center
+	background-position: 
 }
 
 .pimg4 {
