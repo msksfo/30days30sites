@@ -16,11 +16,11 @@ body {
 
 /* ========================== copyright ========================= */
 span {
-	opacity .3;
+	opacity: .3;
 }
 
 .copyright {
-	font-size .9rem;
+	font-size: .9rem;
 }
 /* ================================================================ */
 
@@ -69,6 +69,61 @@ nav, .dvd {
 .mobile-nav:hover, p.menu {
 	cursor: pointer;
 }
+
+/* ======================================= synopsis modal ================================= */
+
+.synopsis-modal {
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	overflow: hidden;
+	background-color: rgba(8,8,6, .9);
+}
+
+.synopsis-modal-content {
+	position: relative;
+	top: 4rem;
+}
+
+.synopsis-mobile {
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.synopsis-mobile p {
+	font-size: 1.1rem;
+	letter-spacing: .3px;
+	line-height: 1.5;
+	color: #eee;
+}
+
+.close-synopsis-button {
+	background-color: rgba(255, 255, 255, .8);
+	color: black;
+	z-index: 8;
+	padding: 8px;
+	border-radius: 10px;
+	position: absolute;
+	left: 90%;   /* 85% at mobile size??? */
+	top: -15%;
+	font-size: 1.5rem;
+}
+
+.close-synopsis-button:hover {
+	cursor: pointer;
+	background-color: #B0321C;
+	color: white;
+}
+
 
 /* ============================== mobile navigation modal ================================= */
 
