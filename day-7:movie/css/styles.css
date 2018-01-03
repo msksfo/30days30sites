@@ -24,9 +24,12 @@ span {
 /* =========================================================================== */
 
 .body-wrapper {
-	width: 100vw; /* why does width : 100% not work????? */
+	width 100vw; /* why does width : 100% not work????? */
+	max-width: 1280px;
+	
+	margin: 0 auto;
 	height: 100vh;
-	border: 1px solid #bbb;
+	
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 33.3% 33.3% 33.3%;

@@ -8,8 +8,13 @@ body {
 }
 
 .body-wrapper {
-	min-width: 100vw; /* why does width : 100% not work????? */
-	min-height: 100vh;
+	margin: 0 auto;
+	min-width 100vw;      /* why does width: 100% not work????? */
+	min-height 100vh;
+
+	background-color: #0d1321;
+	max-width: 1280px;
+
 	display: flex;
 	flex-direction: column;
 }
@@ -557,6 +562,13 @@ nav, .dvd {
 
 	.six:hover {
 		transform: scale(1.6);		
+	}
+}
+
+@media all and (min-width: 1200px){
+	.title {
+		margin-top: 3rem;
+		padding-top: 3rem;
 	}
 }
 

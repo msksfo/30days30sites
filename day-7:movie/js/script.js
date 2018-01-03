@@ -14,7 +14,7 @@ var closeSynopsisButton = document.getElementById('close-synopsis-button');
 var synopsisModal = document.getElementById('synopsis-modal');
 var mobileSynopsisLink = document.getElementById('mobile-synopsis-link');
 
-
+var video = document.getElementById('iframe');
 
  /* =====================  event handlers for the trailer modal =================================== */
 
@@ -27,15 +27,18 @@ mobileTrailerLink.addEventListener('click', function(){
 	trailerModal.style.display = 'block';
 });
 
-closeButton.addEventListener('click', function(){
-	trailerModal.style.display = 'none';
-});
 
-/*
-closeMobileButton.addEventListener('click', function(){
+/*  stop the video when the user closes the trailer modal, by changing the video src attribute. 
+    then put the src attribute back, so the video will play next time 
+ */
+closeButton.addEventListener('click', function(){
+	var src = video.src;
+
+	iframe.src = '';
+	iframe.src = src;
+
 	trailerModal.style.display = 'none';
 });
-*/
 
 /* ========================== event handlers for the mobile navigation modal ============================ */
 
