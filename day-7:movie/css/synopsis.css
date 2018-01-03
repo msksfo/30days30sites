@@ -16,7 +16,7 @@ html {
 
 .body-wrapper {
 	width 100vw; /* why does width : 100% not work????? */
-	height: 100vh;
+	min-height: 100vh;
 
 	max-width: 1280px;
 	margin: 0 auto;
@@ -24,7 +24,9 @@ html {
 	grid-template-columns: 1fr;
 
 	grid-template-rows 33.3% 33.3% 33.3%;
-	grid-template-rows: 66.66% 33.33%;
+	grid-template-rows 66.66% 33.33%;
+	
+	grid-template-rows: 2fr 1fr;
 }
 
 /* ======================================= synopsis modal ================================= */

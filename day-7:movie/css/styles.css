@@ -26,13 +26,15 @@ span {
 .body-wrapper {
 	width 100vw; /* why does width : 100% not work????? */
 	max-width: 1280px;
-	
+
 	margin: 0 auto;
-	height: 100vh;
+	min-height: 100vh;
 	
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 33.3% 33.3% 33.3%;
+	grid-template-rows 33.3% 33.3% 33.3%;
+
+	grid-template-rows: 1fr 1fr 1fr;
 }
 
 nav, .dvd {
@@ -40,11 +42,11 @@ nav, .dvd {
 }
 
 .title-wrapper {
+	grid-row: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	grid-row: 3;
 }
 
 .title {
@@ -194,7 +196,7 @@ nav, .dvd {
 .close {
 	background-color: rgba(255, 255, 255, .7);
 	color: black;
-	z-index: 8;
+	z-index: 10;
 	padding: 8px;
 	border-radius: 10px;
 	position: absolute;
