@@ -104,6 +104,7 @@ nav, .dvd {
 	left: 90%;   /* 85% at mobile size??? */
 	top: -15%;
 	font-size: 1.5rem;
+
 }
 
 .close-synopsis-button:hover {
@@ -206,7 +207,6 @@ nav, .dvd {
 
 .close:hover {
 	cursor: pointer;
-	background-color: white;
 	color: white;
 	background-color: #949D44;
 }
