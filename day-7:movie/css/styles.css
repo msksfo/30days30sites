@@ -13,6 +13,16 @@ html {
 	background-size: cover;
 }
 
+/* ============================== copyright ============================= */
+span {
+	opacity: .3;
+}
+
+.copyright {
+	font-size: .9rem;
+}
+/* =========================================================================== */
+
 .body-wrapper {
 	width: 100vw; /* why does width : 100% not work????? */
 	height: 100vh;
@@ -75,7 +85,6 @@ nav, .dvd {
 }
 
 .hamburger-modal-content {
-	background-color rgba(23,51,70, .8);
 	height: 50%;
 	display: flex;
 	flex-direction: column;

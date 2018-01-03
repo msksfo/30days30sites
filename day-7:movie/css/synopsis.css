@@ -23,6 +23,18 @@ html {
 	grid-template-rows: 33.3% 33.3% 33.3%;
 }
 
+/* ============================= copyright ======================== */
+
+span {
+	opacity: .6;
+}
+
+.copyright {
+	font-size: .9rem;
+}
+
+/* =================================================================== */
+
 nav, .dvd, .synopsis {
 	display: none;
 }
@@ -198,6 +210,10 @@ nav, .dvd, .synopsis {
 		align-items: flex-end;
 	}
 
+	.title {
+		margin-top: 2rem;
+	}
+
 	.mobile-nav, .title-wrapper > p {
 		display: none;
 	}
@@ -255,7 +271,6 @@ nav, .dvd, .synopsis {
 		grid-row: 4 / 6;
 		text-align: center;
 		border-radius: 10px;
-
 		background-color: rgba(8,8,6, .7);
 	}
 
