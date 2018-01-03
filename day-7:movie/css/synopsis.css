@@ -1,0 +1,288 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 100vh;
+	color: #B0321C;
+	color: rgba(255, 255, 255, .9);
+}
+
+html {
+	background: url('../images/background-image1.jpg');
+	background-repeat: no-repeat;
+	background-position: 55% center;
+	background-size: cover;
+}
+
+.body-wrapper {
+	width: 100vw; /* why does width : 100% not work????? */
+	height: 100vh;
+	border: 1px solid #bbb;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+nav, .dvd, .synopsis {
+	display: none;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	grid-row: 3;
+}
+
+.title {
+	text-align: center;
+	font-weight: 400;
+}
+
+.mobile-nav p {
+	font-size: 1.2rem;
+	margin-top: 0;
+}
+
+/* ================================= hamburger icon ===================================== */
+
+.mobile-nav {
+	height: 27px;
+	width: 40px;
+}
+
+.hamburger {
+	height: 9px;
+	border-top: 3px solid #B0321C;
+	border-top: 3px solid #bbb;
+	border-top: 3px solid white;
+}
+
+.mobile-nav:hover, p.menu {
+	cursor: pointer;
+}
+
+/* ============================== mobile navigation modal ================================= */
+
+.hamburger-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	overflow: hidden;
+	background-color: rgba(23,51,70, .8);
+}
+
+.hamburger-modal-content {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hamburger-modal-content a {
+	text-decoration: none;
+	color: white;
+	background-color: #B0321C;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.hamburger-modal-content a:hover {
+	color: #B0321C;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+}
+
+/* =========================================== trailer modal =============================== */
+
+.trailer-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 5;
+}
+
+.trailer-modal-content {
+	z-index: 6;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.close {
+	background-color: rgba(255, 255, 255, .7);
+	color: black;
+	z-index: 8;
+	padding: 8px;
+	border-radius: 10px;
+	position: absolute;
+	left: 90%;   /* 85% at mobile size??? */
+	top: 2%;
+	font-size: 1.5rem;
+}
+
+.close:hover {
+	cursor: pointer;
+	background-color: #B0321C;
+	color: white;
+}
+
+.iframe-container {  
+	position: relative;
+  	height: 0;
+  	overflow: hidden;
+  	padding-bottom: 56.25%;
+
+  	top: 50%;    /* center the iframe container within the modal container */
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.iframe-container iframe { 
+  border: 1px solid white;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+
+  top: 50%;   /* center the iframe withi the iframe container */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* ============================================= media queries ================================ */
+
+@media all and (min-width: 550px){
+	html {
+		background-position: 70% center;
+	}
+}
+
+@media all and (min-width: 650px){
+	html {
+		background-position: center center;
+	}
+
+	.title {
+		padding-top: 4rem;
+	}
+}
+	
+
+@media all and (min-width: 800px){
+	.body-wrapper {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+	}
+
+	.title-wrapper {
+		grid-row: 5 / 7;
+		grid-column: 3 / 5;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.mobile-nav, .title-wrapper > p {
+		display: none;
+	}
+
+	nav {
+		letter-spacing: 1px;
+		padding-left: 1rem;
+		grid-row: 5 / 7;
+		grid-column: 1 / 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	nav a {
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: rgba(255, 255, 255, .9);
+	}
+
+	nav a:hover {
+		color: #B0321C;
+	}
+
+	.dvd {
+		grid-row: 5 / 7;
+		grid-column: 5 / 7;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		padding: 1rem;
+	}
+
+	.dvd a {
+		text-decoration: none;
+		padding: 10px;
+		background-color: rgba(8,8,6, .6);
+		border-radius: 5px;
+		color: rgba(255, 255, 255, .8);
+		font-size: 1.2rem;
+	}
+
+	.dvd a:hover {
+		background-color: #bbb;
+		color: #B0321C;
+		border-radius: 5px;
+	}
+
+	.synopsis {
+		display: flex;
+		align-items: center;
+		padding: 0 10%;
+		grid-column: 2 / 6;
+		grid-row: 4 / 6;
+		text-align: center;
+		border-radius: 10px;
+
+		background-color: rgba(8,8,6, .7);
+	}
+
+	.synopsis p {
+		font-size: 1.1rem;
+		letter-spacing: .3px;
+		line-height: 1.5;
+		color: white;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

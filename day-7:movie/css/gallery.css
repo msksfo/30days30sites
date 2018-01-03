@@ -1,0 +1,515 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 100vh;
+	background-color: #0D1321;
+	color: #bbb;
+}
+
+.body-wrapper {
+	min-width: 100vw; /* why does width : 100% not work????? */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+nav, .dvd {
+	display: none;
+}
+
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gallery-container .image-container {
+	margin: 8px;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	text-align: center;
+	font-weight: 400;
+}
+
+.mobile-nav p {
+	font-size: 1.2rem;
+	margin-top: 0;
+}
+
+/* ================================= hamburger icon ===================================== */
+
+.mobile-nav {
+	height: 27px;
+	width: 40px;
+}
+
+.hamburger {
+	height: 9px;
+	border-top: 3px solid #bbb;
+}
+
+.mobile-nav:hover, p.menu {
+	cursor: pointer;
+}
+
+/* ============================== mobile navigation modal ================================= */
+
+.hamburger-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	overflow: hidden;
+	background-color: rgba(23,51,70, .8);
+}
+
+.hamburger-modal-content {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hamburger-modal-content a {
+	text-decoration: none;
+	background-color: #f7f7f7;
+	color: #0D1321;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.hamburger-modal-content a:hover {
+	color: #f7f7f7;
+	background-color: #0D1321;
+	border-radius: 5px;
+}
+
+/* ============================================= gallery images ============================== */
+
+.gallery-container {
+	margin: 8px;
+	display: flex;
+}
+
+.gallery-image {
+	max-width: 100%;
+	border: 1px solid white;
+}
+
+/* =========================================== trailer modal =============================== */
+
+.trailer-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 5;
+}
+
+.trailer-modal-content {
+	z-index: 6;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .85);
+}
+
+.close {
+	background-color: rgba(255, 255, 255, .7);
+	color: black;
+	z-index: 8;
+	padding: 8px;
+	border-radius: 10px;
+	position: absolute;
+	left: 90%;   /* 85% at mobile size??? */
+	top: 2%;
+	font-size: 1.5rem;
+}
+
+.close:hover {
+	cursor: pointer;
+	background-color: white;
+	color: #0D1321;
+	background-color: white;
+}
+
+.iframe-container {  
+	position: relative;
+  	height: 0;
+  	overflow: hidden;
+  	padding-bottom: 56.25%;
+
+  	top: 50%;    /* center the iframe container within the modal container */
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.iframe-container iframe { 
+  border: 1px solid white;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+
+  top: 50%;   /* center the iframe withi the iframe container */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* ========================================= Media Queries ====================================== */
+
+@media all and (min-width: 650px){
+	.title {
+		padding-top 4rem;
+	}
+}
+	
+
+@media all and (min-width: 700px){
+	.body-wrapper {
+		height: 100vh;
+		width: 100vw;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+	}
+
+	.title-wrapper {
+		grid-row: 5 / 7;
+		grid-column: 3 / 5;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.mobile-nav, .title-wrapper > p {
+		display: none;
+	}
+
+	nav {
+		margin-top: 2rem;
+
+		letter-spacing: 1px;
+		padding-left: 1rem;
+		grid-row: 5 / 7;
+		grid-column: 1 / 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	nav a {
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: rgba(255, 255, 255, .9);
+	}
+
+	nav a:hover {
+		color: #B0321C;
+	}
+
+	.dvd {
+		grid-row: 5 / 7;
+		grid-column: 5 / 7;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		padding: 1rem;
+	}
+
+	.dvd a {
+		text-decoration: none;
+		padding: 10px;
+		background-color: rgba(255, 255, 255, .4);
+		border-radius: 5px;
+		color: #0D1321;
+		font-size: 1.2rem;
+	}
+
+	.dvd a:hover {
+		background-color: #bbb;
+		color: #B0321C;
+		border-radius: 5px;
+	}
+
+	.gallery-container {
+		margin-top 3rem;
+
+		grid-column: 1 / -1;
+		grid-row: 1 / 5;
+		grid-column-gap: 8px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.gallery-container .image-container {
+		margin: 0;
+	}
+
+	/* ================================ image transforms ========================== */
+
+	.one {
+		transition: all .4s ease;
+	}
+
+	.one:hover {
+		transform: scale(1.6) translate(20%, 20%);		
+	}
+
+	.two {
+		transition: all .4s ease;
+	}
+
+	.two:hover {
+		transform: scale(1.6) translate(0, 20%);		
+	}
+
+	.three {
+		transition: all .4s ease;
+	}
+
+	.three:hover {
+		transform: scale(1.6) translate(-20%, 20%);		
+	}
+
+	.four {
+		transition: all .4s ease;
+	}
+
+	.four:hover {
+		transform: scale(1.6) translate(20%, 0);		
+	}
+
+	.five:hover {
+		transform: scale(1.6);
+		transition: all .4s ease;		
+	}
+
+	.nine {
+		transition: all .4s ease;
+	}
+
+	.nine:hover {
+		transform: scale(1.6) translate(-20%, 0);		
+	}
+
+	.seven {
+		transition: all .4s ease;
+	}
+
+	.seven:hover {
+		transform: scale(1.6) translate(20%, -20%);		
+	}
+
+	.eight {
+		transition: all .4s ease;
+	}
+
+	.eight:hover {
+		transform: scale(1.6) translate(0, -20%);		
+	}
+
+	.six {
+		transition: all .4s ease;
+	}
+
+	.six:hover {
+		transform: scale(1.6) translate(-20%, -20%);		
+	}
+}
+
+
+@media all and (min-width: 850px){
+	.gallery-container {
+		margin-top: 3rem;
+		grid-column: 2 / 6;
+		grid-row: 1 / 5;
+	}
+
+	nav {
+		margin-top: 0;
+	}
+
+	.one {
+		transition: all .4s ease;
+	}
+
+	.one:hover {
+		transform: scale(1.7);
+	}
+
+	.two {
+		transition: all .4s ease;
+	}
+
+	.two:hover {
+		transform: scale(1.7);
+	}
+
+	.three {
+		transition: all .4s ease;
+	}
+
+	.three:hover {
+		transform: scale(1.7);
+	}
+
+	.four {
+		transition: all .4s ease;
+	}
+
+	.four:hover {
+		transform: scale(1.7);	
+	}
+
+	.five:hover {
+		transform: scale(1.7);
+		transition: all .4s ease;		
+	}
+
+	.nine {
+		transition: all .4s ease;
+	}
+
+	.nine:hover {
+		transform: scale(1.7);
+	}
+
+	.seven {
+		transition: all .4s ease;
+	}
+
+	.seven:hover {
+		transform: scale(1.7);
+	}
+
+	.eight {
+		transition: all .4s ease;
+	}
+
+	.eight:hover {
+		transform: scale(1.7);
+	}
+
+	.six {
+		transition: all .4s ease;
+	}
+
+	.six:hover {
+		transform: scale(1.7);		
+	}
+
+}
+
+@media all and (min-width: 850px){
+
+	.one {
+		transition: all .4s ease;
+	}
+
+	.one:hover {
+		transform: scale(1.6);
+	}
+
+	.two {
+		transition: all .4s ease;
+	}
+
+	.two:hover {
+		transform: scale(1.6);
+	}
+
+	.three {
+		transition: all .4s ease;
+	}
+
+	.three:hover {
+		transform: scale(1.6);
+	}
+
+	.four {
+		transition: all .4s ease;
+	}
+
+	.four:hover {
+		transform: scale(1.6);	
+	}
+
+	.five:hover {
+		transform: scale(1.6);
+		transition: all .4s ease;		
+	}
+
+	.nine {
+		transition: all .4s ease;
+	}
+
+	.nine:hover {
+		transform: scale(1.6);
+	}
+
+	.seven {
+		transition: all .4s ease;
+	}
+
+	.seven:hover {
+		transform: scale(1.6);
+	}
+
+	.eight {
+		transition: all .4s ease;
+	}
+
+	.eight:hover {
+		transform: scale(1.6);
+	}
+
+	.six {
+		transition: all .4s ease;
+	}
+
+	.six:hover {
+		transform: scale(1.6);		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
