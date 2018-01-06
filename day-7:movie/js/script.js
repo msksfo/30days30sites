@@ -33,11 +33,6 @@ mobileTrailerLink.addEventListener('click', function(){
  */
 closeButton.addEventListener('click', function(){
 	var src = video.src;
-	
-	/*
-	iframe.src = '';
-	iframe.src = src;
-	*/
 
 	video.src = '';
 	video.src = src;
