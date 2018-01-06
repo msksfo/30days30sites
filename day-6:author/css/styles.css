@@ -184,7 +184,7 @@ h1 {
 
 
 .about p {
-	text-align center;    /* keep above 800??? */
+	text-align: center;    /* do i like this text centered????  */
 
 	padding: 0 14px;
 	font-size: 1.2rem;
@@ -291,13 +291,19 @@ h2 {
 }
  
 .quotes::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
     border-radius: 10px;
 }
  
 .quotes::-webkit-scrollbar-thumb {
     border-radius: 10px;
      -webkit-box-shadow: inset 0 0 5px rgba(252, 121, 115, .6); 
+     -moz-box-shadow: inset 0 0 5px rgba(252, 121, 115, .6); 
+     -o-box-shadow: inset 0 0 5px rgba(252, 121, 115, .6); 
+     box-shadow: inset 0 0 5px rgba(252, 121, 115, .6); 
 }
 
 /* ==================================== ARTWORK SECTION ================================== */
@@ -390,7 +396,7 @@ footer p {
 
 /* ===================================== MEDIA QUERIES ======================================= */
 
-@media all and(min-width: 490px){
+@media all and (min-width: 490px){
 	.ptext2 span {
 		margin-top: 50px;
 	}
@@ -402,6 +408,10 @@ footer p {
 	/* ==== NAV ==== */
 
 	nav {
+		position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -o-sticky;
+		position: -ms-sticky;
 		position: sticky;
 		top: 0;
 		z-index: 9;
@@ -525,12 +535,13 @@ footer p {
 	 	align-items: center;
 	 	
 	 }
-	 .title-block h1 {
+
+	h1 {
 	 	line-height: 90%;
 	 	padding: 0 10px;
 	}
 
-	.title-block h1, .title-block q {
+	h1, .title-block q {
 		position: relative;
 		top: -13%;
 	}
