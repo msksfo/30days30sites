@@ -5,9 +5,7 @@
          url('font/grinchedregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 body, html {
 	height: 100%;
@@ -175,6 +173,13 @@ nav a {
 
 /* =============================================  ABOUT ====================================== */
 
+.about-offset {          /* how do these work??????? */
+	display: block;
+	height: 63px;
+	margin-top: -63px;
+	visibility: hidden;
+}
+
 
 h1 {
 	font-family 'Grinched';
@@ -214,6 +219,13 @@ h1 {
 }
 
 /* ================================== BOOKS SECTION =================================== */
+
+.books-offset {
+	display: block;
+	height: 1px;
+	margin-top: -63px;
+	visibility: hidden;
+}
 
 .books-section {
 	position: relative;   /* this is necessary for my partial border pseudo elment */
@@ -262,6 +274,13 @@ h1 {
 
 
 /* ====================================== QUOTES  SECTION ===================================== */
+
+.quote-offset {
+	display: block;
+	height: 1px;
+	margin-top: -63px;
+	visibility: hidden;
+}
 
 h2 {
 	margin-top: 0;
@@ -324,6 +343,13 @@ h2 {
 }
 
 /* ==================================== ARTWORK SECTION ================================== */
+
+.artwork-offset {
+	display: block;
+	height: 40px;
+	margin-top: -40px;
+	visibility: hidden;
+}
 
 .artwork {
 	margin: 4rem 1rem;
@@ -415,6 +441,10 @@ footer p {
 @media all and (min-width: 600px){  /* ===== 600 PX ==== */
 
 	/* ==== NAV ==== */
+
+	html {
+		scroll-behavior: smooth;
+	}
 
 	nav {
 		position: -webkit-sticky;
