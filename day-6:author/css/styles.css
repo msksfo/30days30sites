@@ -1,0 +1,645 @@
+body, html {
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	background-color #F3f4f6; /* matches top edge of pimg2 */
+
+	background-color #EAEBF0; /* matches bottom most edge of pimg2 */
+
+	background-image linear-gradient(to bottom, #F3F3F3 0%, #f0f0f2 100%);
+
+}
+
+/* ====================================== PARALLAX IMAGE 1 ================================ */
+
+.pimg1 {
+	position: relative;
+	min-height: 100vh;
+	background-image: url('../tinified/seuss-img2-1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+    overflow: hidden;
+}
+
+.ptext {
+	border-radius: 5px;
+	letter-spacing: 3px;
+	padding: 10px 10px;
+	font-size: 2.3rem;
+	width: 85%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border: 1px solid purple;
+	color: #200d43;
+	background-color: rgba(221,208,246, .9);
+}
+
+/* ===================== parallax image 1, TEXT OVERLAY ================================ */
+
+.intro  {
+	font-family: 'Grinched';
+	font-weight: lighter;
+}
+
+/* ===================================== PARALLAX IMAGE 2 ======================================== */
+
+.pimg2 {
+
+	position: relative;
+	min-height: 100vh;
+	background-image: url('../tinified/seuss-img3.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+	background-size cover;
+	background-size: contain;
+
+	background-color: #F3f4f6;
+	background-blend-mode: darken;
+
+	background-attachment: scroll;
+	overflow: hidden;
+}
+
+.ptext2 {
+	border-radius: 5px;
+	font-family: 'Princess Sofia', cursive;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	top: 85%;
+	
+	position: absolute;
+	text-align: center;
+
+	color: #200d43;
+	background-color: transparent;
+}
+
+
+.ptext2 span {
+	display: block;
+	margin-top: -20px;
+	
+}
+
+
+/* ============================================== NAVIGATION ======================================== */
+
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+nav a {
+	margin: 0;
+	padding: 1rem; 0;
+	text-decoration: none;
+	display: block;
+
+	border 1px solid blue;
+
+	font-size: 1.7rem;
+	letter-spacing: 2px;
+
+	font-family 'Barrio', cursive;
+	font-family 'Ruge Boogie', cursive;
+
+	font-family: 'Grinched';
+	font-weight: lighter;
+}
+
+.about-link {
+	color: #973F8C;
+	background-color: #f8eef7;
+}
+
+.about-link:hover {
+	color: ivory;
+	background-color: #973F8C;
+}
+
+.books-link {
+	color: #fec70e; 
+	background-color: #fffaea;
+}
+
+.books-link:hover {
+	color: ivory;
+	background-color: #fec70e;
+}
+
+.quotes-link {
+	color: #1D98CD; /* blue blue */
+	color: #4DA8B2;  /* teal blue */
+
+	background-color: #e7f3f5; 
+	background-color #f3f9fa;  /* one shade lighter than abover background color */
+}
+
+.quotes-link:hover {
+	color: ivory;
+	background-color: #1D98CD;
+
+	background-color: #4DA8B2;        /* more teal than blue */
+}
+
+.artwork-link {
+	color: #E2A2B0; /* pink like background image */
+
+	color: #CA0F23; /* typical seuss red */
+
+	color: #E91588;    /* pink like one fish two fish book */
+	background-color: #fdeef7;
+}
+
+.artwork-link:hover {
+	color: ivory;
+	background-color: #ca0f23;
+	background-color: #E91588;
+}
+
+/* =============================================  ABOUT ====================================== */
+
+
+h1 {
+	font-family: 'Grinched';
+	font-weight: lighter;
+	font-size: 6rem;
+	text-align: center;
+	margin: 0 0 2rem 0;
+	padding-top: 4rem;
+
+	color #CF0E23;
+	color #2595B2;
+	color #1c7288;
+	color: #1BA4EB;
+	color: #1D98CD;
+	color: #973F8C;
+
+}
+
+.about q {
+	display: inline-block;
+	font-size: 1.2rem;
+	font-style: italic;
+	text-align: center;
+	padding: 0 14px;
+	line-height: 1.3;
+	margin-bottom: 1.5rem;
+}
+
+
+.about p {
+	text-align center; /* keep above 800??? */
+
+	padding: 0 14px;
+	font-size: 1.2rem;
+	line-height: 1.3;
+}
+
+.about-text:last-child {     /* don't forget to change this if changing text around */
+	padding-bottom: 1rem;
+	margin-bottom: 0;
+}
+
+/* ================================== BOOKS SECTION =================================== */
+
+.books-section {
+	position: relative;   /* this is necessary for my partial border pseudo elment */
+	padding: 2.5rem .5rem 2.5rem .5rem;
+}
+
+.books-section p {
+	font-size: 1.2rem;
+	line-height: 1.3;
+}
+
+.books-section:before {
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 70%;
+	left: 15%;
+	top: -.5rem;
+	background-color: #fff2c8;
+}
+
+.books-inner-section {
+	padding: 10%;
+	border-image: url('../tinified/drseuss-grid.jpg') 110 110 110 110 repeat;
+	border-width: 27px;
+	border-style: inset;   /* this has to be here or it the border image won's show up */
+}
+
+.book-sellers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.book-sellers a {
+	font-size: 1.1rem;
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px;
+	color: #CA0F23;
+}
+
+.book-sellers a:hover {
+	color: #1D98CD;
+}
+
+
+/* ====================================== QUOTES  SECTION ===================================== */
+
+h2 {
+	margin-top: 0;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.quote-section {
+	margin-top: 4rem;
+	padding-bottom: 5rem;
+	padding: 0 1rem 5rem 1rem;
+
+	background-color #1D98CD;     /* more blue background-color */
+	background-color: #4DA8B2;
+
+	border: 10px solid #337077;
+
+	color: ivory;
+	font-size: 1.2rem;
+}
+
+.quote-section p {
+	text-align: center;
+}
+
+.quotes {
+	padding: 2rem 1rem;
+	border: 2px solid #FC7973;
+	background-color: #f3f9fa;
+	color: black;
+	margin: 0 auto;
+}
+
+.quotes q {
+	padding: 1rem 0;
+	display: block;
+	text-align: center;
+}
+
+.skip-on-mobile {
+	display: none;
+}
+
+             /* ==================== quotes div SCROLL BAR ============ */
+
+.quotes::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+.quotes::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.quotes::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 5px rgba(252, 121, 115, .6); 
+}
+
+/* ==================================== ARTWORK SECTION ================================== */
+
+.artwork {
+	margin: 4rem 1rem;
+	border: 20px double #E91588; ;
+}
+
+.artwork-section, .art-books {
+	padding: 1.5rem .5rem;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.art-books-shopping {
+	border: 1px solid #178DCD;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.art-books-shopping p {
+	padding: 0 1.2rem;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+
+.artwork-section img, .art-books img {
+	max-width: 100%;
+	border: 1px solid pink;
+	padding: .5rem;
+}
+
+.art-books figure {
+	
+}
+
+.shopping1 img{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+figcaption {
+	font-size: 1.1rem;
+}
+
+figure a {
+	text-decoration: none;
+	color: #E91588;
+}
+
+figure a:hover {
+	color: #67AB47;
+}
+
+/* ============================== FOOTER ===================================== */
+
+footer {
+	padding: 1rem 0;
+	text-align: center;
+	background-color: #F2F2F3;
+	color: rgba(51, 31, 19, .5);
+}
+
+footer p {
+	margin:0;
+}
+
+.tangoecho a{
+	text-decoration: none;
+	color: rgba(51, 31, 19, .5);
+}
+
+.tangoecho a:hover {
+	color: rgba(120,194,183, .7);
+}
+
+/* ===================================== MEDIA QUERIES ======================================= */
+
+@media all and(min-width: 490px){
+	.ptext2 span {
+		margin-top: 50px;
+	}
+}
+
+
+@media all and (min-width: 600px){  /* ===== 600 PX ==== */
+
+	/* ==== NAV ==== */
+
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 9;
+	}
+
+	nav ul {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	nav li {
+		display: inline-block;
+		height: 100%;
+	}
+
+	/* ==== ABOUT SECTION == */
+
+	.about p, .about q {
+		padding: 0 10%;
+	}
+
+	/* ==== PARALLAX IMAGES ==== */
+
+	.pimg1, .pimg2 {
+		background-attachment: fixed;
+	}
+
+	.ptext2 {
+		letter-spacing: 3px;
+		font-size: 2rem;
+
+		width: 35%;
+		position: absolute;
+		top: 38%;
+		left: 21%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		border 1px solid purple;
+		background-color: rgba(120,194,183, .7);
+		background-color: transparent;
+		color: #200d43;
+	}
+
+	.ptext2 span {
+		margin-top: 0;
+	}
+
+	/* ==== BOOKS SECTION ==== */
+
+	.books-section {
+		margin: 2rem 0;
+		padding: 1.5rem;
+	}
+
+	.books-section:before {
+		top: -2.5rem;
+	}
+
+	.books-inner-section {
+		border-width: 40px;
+	}
+
+	.books-inner-section p {
+		text-align: center;          /* do i like this or no????? */
+	}
+
+	.book-sellers {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/* ===== ARTWORK SECTION === */
+
+	.artwork-section {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	
+	.art-books-shopping {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row: 1;
+		grid-column: 1 / -1;		
+	}
+	
+	
+
+	.art-books-shopping > p {
+		grid-column: 1 / -1;
+	}
+
+}
+
+@media all and (min-width: 800px){  /* ===== 800 PX ==== */
+
+	.ptext {
+		top: 50%;
+		width: 50%;
+	}
+	/* ===== ABOUT SECTION === */
+
+	.about {
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	.about q {
+		margin-bottom: 0;
+	}
+
+	.about-text {
+		border-left: 1px solid purple;
+	}
+
+	/* === ABUOT / TITLE BLOCK ==== */
+
+	 .title-block {
+	 	display: flex;
+	 	flex-direction: column;
+	 	justify-content: center;
+	 	align-items: center;
+	 	
+	 }
+	 .title-block h1 {
+	 	line-height: 90%;
+	 	padding: 0 10px;
+	}
+
+	.title-block h1, .title-block q {
+		position: relative;
+		top: -13%;
+	}
+
+	/* ===== BOOKS SECTION ===== */
+
+	.books-section {
+		padding: 2rem;
+	}
+
+	.books-section:before {
+		display: none;
+	}
+
+	.books-inner-section {
+		border-width: 55px;
+	}
+
+	/* ==== QUOTE SECTION ==== */
+
+	.quotes {
+		width: 70%;
+		max-height: 300px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+	.skip-on-mobile {
+		display: block;
+	}
+
+	/* === ARTWORK SECTION === */
+
+	.artwork-section {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.art-books {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.art-books-shopping {
+		grid-column: 1;
+
+		border: none;
+		border-right: 1px solid #178DCD;
+		padding-right: 1.5rem;
+	}
+
+	.art-books-shopping figure {
+		margin: 1rem;
+	}
+
+	/* === PARALLAX TEXT 2 === */
+
+	.ptext2 {
+		padding: 1rem;
+		width: 45%;
+		position: absolute;
+		top: 25%;
+		left: 30%;
+		text-align: center;
+		border: 1px solid purple;
+		background-color: rgba(120,194,183, .7);
+		color: #200d43;
+	}
+
+
+}
+
+@media all and (min-width: 1000px){   /* ===== 1000 PX ==== */
+
+	/* === PARALLAX TEXT 2 ==== */
+
+	.ptext2 {
+		width: 40%;		
+		top: 27%;
+		left: 30%;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
