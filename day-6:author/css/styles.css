@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: 'grinchedregular';
+    src: url('font/grinchedregular-webfont.woff2') format('woff2'),
+         url('font/grinchedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body, html {
 	height: 100%;
 	box-sizing: border-box;
@@ -45,7 +56,9 @@ body, html {
 /* ===================== parallax image 1, TEXT OVERLAY ================================ */
 
 .intro  {
-	font-family: 'Grinched';
+	font-family 'Grinched';
+	font-family: 'grinchedregular';
+
 	font-weight: lighter;
 }
 
@@ -112,7 +125,9 @@ nav a {
 	font-family 'Ruge Boogie', cursive;
 */
 
-	font-family: 'Grinched';
+	font-family 'Grinched';
+	font-family: 'grinchedregular';
+
 	font-weight: lighter;
 }
 
@@ -162,7 +177,9 @@ nav a {
 
 
 h1 {
-	font-family: 'Grinched';
+	font-family 'Grinched';
+	font-family: 'grinchedregular';
+
 	font-weight: lighter;
 	font-size: 6rem;
 	text-align: center;
@@ -344,14 +361,6 @@ h2 {
 	padding: .5rem;
 }
 
-/*
-.shopping1 img{
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-}
-*/
-
 figure img{
 	border: 1px solid purple;
 	position: relative;
@@ -489,9 +498,8 @@ footer p {
 	.artwork-section {
 		padding-left: .5rem;
 		padding-right: .5rem;
-
 		grid-template-columns: 1fr 1fr;
-	}	
+	}
 	
 	.art-books-shopping {
 		grid-template-columns: repeat(2, 1fr);
