@@ -4,12 +4,11 @@ body, html {
 	margin: 0;
 	padding: 0;
 
-	background-color #F3f4f6; /* matches top edge of pimg2 */
-
-	background-color #EAEBF0; /* matches bottom most edge of pimg2 */
-
+	/*
+	background-color #F3f4f6;            matches top edge of pimg2 
+	background-color #EAEBF0;           matches bottom most edge of pimg2 
 	background-image linear-gradient(to bottom, #F3F3F3 0%, #f0f0f2 100%);
-
+	*/
 }
 
 /* ====================================== PARALLAX IMAGE 1 ================================ */
@@ -88,9 +87,7 @@ body, html {
 .ptext2 span {
 	display: block;
 	margin-top: -20px;
-	
 }
-
 
 /* ============================================== NAVIGATION ======================================== */
 
@@ -104,17 +101,16 @@ nav ul {
 
 nav a {
 	margin: 0;
-	padding: 1rem; 0;
+	padding: 1rem 0;
 	text-decoration: none;
 	display: block;
 
-	border 1px solid blue;
-
 	font-size: 1.7rem;
 	letter-spacing: 2px;
-
+/*
 	font-family 'Barrio', cursive;
 	font-family 'Ruge Boogie', cursive;
+*/
 
 	font-family: 'Grinched';
 	font-weight: lighter;
@@ -141,25 +137,17 @@ nav a {
 }
 
 .quotes-link {
-	color: #1D98CD; /* blue blue */
 	color: #4DA8B2;  /* teal blue */
 
 	background-color: #e7f3f5; 
-	background-color #f3f9fa;  /* one shade lighter than abover background color */
 }
 
 .quotes-link:hover {
 	color: ivory;
-	background-color: #1D98CD;
-
-	background-color: #4DA8B2;        /* more teal than blue */
+	background-color: #4DA8B2;  
 }
 
 .artwork-link {
-	color: #E2A2B0; /* pink like background image */
-
-	color: #CA0F23; /* typical seuss red */
-
 	color: #E91588;    /* pink like one fish two fish book */
 	background-color: #fdeef7;
 }
@@ -180,12 +168,6 @@ h1 {
 	text-align: center;
 	margin: 0 0 2rem 0;
 	padding-top: 4rem;
-
-	color #CF0E23;
-	color #2595B2;
-	color #1c7288;
-	color: #1BA4EB;
-	color: #1D98CD;
 	color: #973F8C;
 
 }
@@ -202,14 +184,14 @@ h1 {
 
 
 .about p {
-	text-align center; /* keep above 800??? */
+	text-align center;    /* keep above 800??? */
 
 	padding: 0 14px;
 	font-size: 1.2rem;
 	line-height: 1.3;
 }
 
-.about-text:last-child {     /* don't forget to change this if changing text around */
+.about-text:last-child {     /* don't forget to change this if using only 1 paragraph */
 	padding-bottom: 1rem;
 	margin-bottom: 0;
 }
@@ -274,12 +256,8 @@ h2 {
 	margin-top: 4rem;
 	padding-bottom: 5rem;
 	padding: 0 1rem 5rem 1rem;
-
-	background-color #1D98CD;     /* more blue background-color */
 	background-color: #4DA8B2;
-
 	border: 10px solid #337077;
-
 	color: ivory;
 	font-size: 1.2rem;
 }
@@ -330,9 +308,16 @@ h2 {
 }
 
 .artwork-section, .art-books {
-	padding: 1.5rem .5rem;
+	padding-top: 1.5rem;    /*  no side padding until 600px?  */
+
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+.art-books {
+	grid-row-gap: .8rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
 }
 
 .art-books-shopping {
@@ -347,18 +332,22 @@ h2 {
 	text-align: center;
 }
 
-
 .artwork-section img, .art-books img {
 	max-width: 100%;
 	border: 1px solid pink;
 	padding: .5rem;
 }
 
-.art-books figure {
-	
-}
-
+/*
 .shopping1 img{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+*/
+
+figure img{
+	border: 1px solid purple;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
@@ -452,9 +441,8 @@ footer p {
 		transform: translate(-50%, -50%);
 		text-align: center;
 
-		border 1px solid purple;
 		background-color: rgba(120,194,183, .7);
-		background-color: transparent;
+		background-color transparent;  /* do i want background color or transparent? */
 		color: #200d43;
 	}
 
@@ -489,9 +477,11 @@ footer p {
 	/* ===== ARTWORK SECTION === */
 
 	.artwork-section {
+		padding-left: .5rem;
+		padding-right: .5rem;
+
 		grid-template-columns: 1fr 1fr;
-	}
-	
+	}	
 	
 	.art-books-shopping {
 		grid-template-columns: repeat(2, 1fr);
@@ -499,8 +489,6 @@ footer p {
 		grid-column: 1 / -1;		
 	}
 	
-	
-
 	.art-books-shopping > p {
 		grid-column: 1 / -1;
 	}
@@ -586,10 +574,20 @@ footer p {
 
 	.art-books-shopping {
 		grid-column: 1;
-
 		border: none;
-		border-right: 1px solid #178DCD;
+		position: relative;  /* needed for my pseudo element that makes a partial border */
 		padding-right: 1.5rem;
+	}
+
+	.art-books-shopping:after {   /* this is a partial right side border */
+		display: block;
+		content: '';
+		position: absolute;
+		top: 1rem;
+		left: 100%;
+		height: 90%;
+		width: 1px;
+		background: rgba(23, 141, 205, .5);
 	}
 
 	.art-books-shopping figure {
@@ -602,7 +600,7 @@ footer p {
 		padding: 1rem;
 		width: 45%;
 		position: absolute;
-		top: 25%;
+		top: 35%;
 		left: 30%;
 		text-align: center;
 		border: 1px solid purple;
@@ -619,7 +617,7 @@ footer p {
 
 	.ptext2 {
 		width: 40%;		
-		top: 27%;
+		top: 38%;
 		left: 30%;
 		
 	}
