@@ -81,6 +81,8 @@ nav a:hover {
 	background-image: url('../images/restaurant-entrance.jpg');
 	height: 85vh;
 	background-position: center right;
+	display: block;
+	width: 100vw;
 }
 
 .pimg2 {
