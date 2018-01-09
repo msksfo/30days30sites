@@ -20,6 +20,10 @@ body, html {
 	*/
 }
 
+html {
+	scroll-behavior smooth;
+}
+
 /* ====================================== PARALLAX IMAGE 1 ================================ */
 
 .pimg1 {
@@ -139,6 +143,11 @@ nav a {
 	background-color: #973F8C;
 }
 
+.aboutHover {
+	color: ivory;
+	background-color: #973F8C;
+}
+
 .books-link {
 	color: #fec70e; 
 	background-color: #fffaea;
@@ -149,9 +158,13 @@ nav a {
 	background-color: #fec70e;
 }
 
-.quotes-link {
-	color: #4DA8B2;  /* teal blue */
+.booksHover {
+	color: ivory;
+	background-color: #fec70e;
+}
 
+.quotes-link {
+	color: #4DA8B2;  
 	background-color: #e7f3f5; 
 }
 
@@ -160,24 +173,38 @@ nav a {
 	background-color: #4DA8B2;  
 }
 
+.quoteHover {
+	color: ivory;
+	background-color: #4DA8B2;  
+}
+
 .artwork-link {
-	color: #E91588;    /* pink like one fish two fish book */
+	color: #E91588;   
 	background-color: #fdeef7;
 }
 
 .artwork-link:hover {
 	color: ivory;
-	background-color: #ca0f23;
+	background-color: #E91588;
+}
+
+.artworkHover {
+	color: ivory;
 	background-color: #E91588;
 }
 
 /* =============================================  ABOUT ====================================== */
 
-.about-offset {          /* how do these work??????? */
+.about-offset {       /* this is the span above the about section. it offsets the fixed header height */
 	display: block;
 	height: 63px;
 	margin-top: -63px;
 	visibility: hidden;
+}
+
+#quotes-section:target {
+	color: ivory;
+	background-color: #973F8C;
 }
 
 
@@ -278,7 +305,7 @@ h1 {
 .quote-offset {
 	display: block;
 	height: 1px;
-	margin-top: -63px;
+	margin-top: -64px;
 	visibility: hidden;
 }
 
@@ -346,8 +373,8 @@ h2 {
 
 .artwork-offset {
 	display: block;
-	height: 40px;
-	margin-top: -40px;
+	height: 60px;
+	margin-top: -60px;
 	visibility: hidden;
 }
 
@@ -441,10 +468,6 @@ footer p {
 @media all and (min-width: 600px){  /* ===== 600 PX ==== */
 
 	/* ==== NAV ==== */
-
-	html {
-		scroll-behavior: smooth;
-	}
 
 	nav {
 		position: -webkit-sticky;

@@ -14,3 +14,7 @@ Day 5 link ~ https://msksfo.github.io/30days30sites/day5:restaurant-menu/index.h
 Day 6 link ~ https://msksfo.github.io/30days30sites/day-6:author/index.html
 
 Day 7 link ~ https://msksfo.github.io/30days30sites/day-7:movie/index.html
+
+Day 9 link ~ https://msksfo.github.io/30days30sites/day-9:toy-or-game/index.html
+
+
