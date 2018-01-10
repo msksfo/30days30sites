@@ -13,7 +13,23 @@
 
 	<body>
 		<div class='body-wrapper'>
-			<nav>
+
+		<div id='mobile-nav' class='mobile-nav'>
+			<span id='mobile-nav-icon'><i class='fas fa-chart-pie fa-2x'></i></span>
+			<p>MENU</p>
+		</div>
+
+		<div id='side-menu' class='side-nav'>
+			<a href='#' id='btn-close' class='btn-close'>&times;</a>
+
+			<a href='#home'>HOME</a>
+			<a href='#about'>ABOUT</a>
+			<a href='#products'>PRODUCTS</a>
+			<a href='#reviews'>REVIEWS</a>
+			<a href='#contact'>CONTACT</a>
+		</div>
+
+			<nav id='medium-width-nav' class='medium-width-nav'>
 				<ul>
 					<li><a href='#home'>HOME</a></li>
 					<li><a href='#about'>ABOUT</a></li>
@@ -24,20 +40,9 @@
 			</nav>
 
 			<span id='home' class='nav-offset'></span>
-			<div class='piefacebanner'>
+			<div id='main-banner' class='piefacebanner'>
 				<h1>Pie Face!</h1>
 			</div>
-			
-		<!--
-			<svg viewBox='0 53 300 300'>
-				<path id='curve'  d='M73.2,148.6c4-6.1, 65.5-96.8, 178.6-95.6c111.3, 1.2,170.8,90.3,175.1,97'/>
-				<text width='300'>
-					<text-path alignment-baseline='top' xlink:href='#curve'>
-						
-					</text-path>
-				</text>
-			</svg>
-		-->
 
 			<span id='about' class='nav-offset'></span>
 			<div  class='about-section'>
@@ -147,14 +152,53 @@
 			<div  class='contact-section'>
 				<div class='get-in-touch'>
 					<h4>Get In Touch</h4>
-					<address>
-						Pie In Your Face<br>
-						1122 Boogie Boogie Avenue<br>
-						Somewhereville, Utah<br>
-						98776<br>
-						USA
-					</address>
-				</div>
+					<p>We want to hear from you! Contact us using any of the following options:</p>
+					<div class='contact-grid'>
+						<div class='old-school-contact'>
+							<h5>Write</h5>
+							<address>
+								Pie In Your Face<br>
+								1122 Boogie Boogie Avenue<br>
+								Somewhereville, Utah<br>
+								98776<br>
+								USA<br>		 
+							</address>
+
+							<h5>Call</h5>
+							<address>
+								Phone: 444-136-9372						 
+							</address>
+
+							<h5>Email</h5>
+							<address>
+								Email us: weputpieinyourface@pieface.com<br>						 
+							</address>
+						</div> <!-- close .old-school-contact -->
+
+						<div class='modern-contact'>
+							<h5>Online</h5>
+							<form>
+								<p>
+									<label>Name</label>
+									<input type='text' name='name'>
+								</p>
+
+								<p>
+									<label type='email' name='email'>Email</label>
+									<input>
+								</p>
+
+								<p class='full'>	
+									<label>Message</label>
+									<textarea name='message' rows='5'></textarea>
+								</p>
+								<p class='full'><button type='submit'>Submit</button></p>
+							</form>
+						</div><!-- close .modern-contact div -->
+
+					</div> <!-- close .contact-grid div -->
+
+				</div> <!-- close .get-in-touch div -->
 
 				<div class='social-media'>
 					<h4>Find us on social media</h4>
@@ -163,7 +207,8 @@
 						<a href=''><i class='fab fa-twitter fa-lg'></i></a>
 						<a href=''><i class='fab fa-snapchat fa-lg'></i></a>
 					</div>
-				</div>
+				</div> <!-- close .social-media div -->
+
 			</div> <!-- close .contact-section -->
 
 
