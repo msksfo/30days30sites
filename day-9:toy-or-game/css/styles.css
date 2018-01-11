@@ -37,9 +37,6 @@ html {
 	z-index: 10;
 	top: 0;
 	left: 0;
-
-	background-color: #111;
-	background-color: #04101f;
 	background-color: #0a274c;
 	opacity: .9;
 
@@ -126,11 +123,11 @@ nav a:hover, nav a:focus {
 
 h1 {
 	text-align: center;
+	font-size: 7rem;
 }
 
 .piefacebanner {
 	min-height: calc(100vh - 52px);
-	font-size: 4.8rem;
 	text-shadow: -2px 2px 2px #fff,
 				 2px 2px 2px #fff,
 				 2px -2px 0 #fff,
@@ -199,10 +196,6 @@ h2, h3 {
 	text-align: center;
 }
 
-.original, .with-friends, .skyhigh, .special-editions {
-	border 1px solid blue;
-}
-
 .original p, .with-friends p, .skyhigh p, .special-editions p {
 	text-align: center;
 	padding: 0 .5rem;
@@ -251,8 +244,6 @@ q {
 	margin-bottom: 2rem;
 	padding: .5rem;
 	position: relative;
-
-	border 1px solid #ebb168;
 	background-color: white;
 }
 
@@ -264,7 +255,6 @@ q {
 	top: 100%;
 	left: 15%;
 	background-color: rgba(20, 78, 151, .3);
-
 	margin-top: 1rem;
 }
 

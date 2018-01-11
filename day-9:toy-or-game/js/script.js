@@ -11,5 +11,5 @@ mobileNavIcon.addEventListener('click', function(){
 
 btnClose.addEventListener('click', function(){
 	sideMenu.style.width = 0;
-	mainBanner.style.marginLeft = 0;
+	//mainBanner.style.marginLeft = 0;
 });
