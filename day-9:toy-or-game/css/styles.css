@@ -45,8 +45,8 @@ html {
 	transition: all .4s;
 }
 
-.side-nav a {
-	color: #CCC;
+.side-nav a, .btn-close {
+	color: #ccc;
 	display: block;
 	transition: .3s;
 	text-decoration: none;
@@ -54,8 +54,9 @@ html {
 	font-size: 1.1rem;
 }
 
-.side-nav a:hover {
+.side-nav a:hover, .btn-close:hover {
 	color: white;
+	color: #EB4342;
 }
 
 .side-nav .btn-close {
