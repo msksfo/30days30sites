@@ -4,6 +4,10 @@ var sideMenu = document.getElementById('side-menu');
 var mainBanner = document.getElementById('main-banner');
 
 
+window.onbeforeunload = function(){
+	window.scrollTo(0, 0);
+}
+
 mobileNavIcon.addEventListener('click', function(){
 	sideMenu.style.width = '200px';
 	//mainBanner.style.marginLeft = '192px';
