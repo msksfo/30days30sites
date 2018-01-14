@@ -41,6 +41,8 @@ q {
 	justify-content: center;
 	align-items: center;
 	background-color: #050001;
+	color: #969595;
+
 }
 
 .memoriam-text {
@@ -95,7 +97,6 @@ nav {
 
  .nav-link {
 	display: block;
-
 	padding: 1rem;
 
 	text-decoration: none;
@@ -355,7 +356,7 @@ a.copyright:hover {
 	.nav-link {
 		padding: 1.3rem;
 	}
-	
+
 	.reflections-container {
 		margin-top: 2rem;
 	}
