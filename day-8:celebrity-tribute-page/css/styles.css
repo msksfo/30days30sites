@@ -1,0 +1,537 @@
+/* =========================== global styles ========================== */
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%
+}
+
+q {
+	font-style: italic;
+}
+
+.nav-offset {
+	display: block;
+	visibility: hidden;
+	margin-top: -79px;
+	height: 77px;
+}
+
+
+/* ========================== fade out div =============================== */
+.memoriam {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	color: #7F7F80;
+	color: #969595;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #050001;
+
+	display: none;            /* turn off for animation */
+}
+
+.memoriam-text {
+	position: relative;
+	bottom: 3rem;
+	right: .8rem;
+	text-align: center;
+}
+
+.memoriam-text > * {
+	margin: 0;
+	padding: 0;
+}
+
+/* ==================================================================================== */
+
+.headline-image {
+	background-image: url('../images/themoon2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.headline-image-container {
+	position: relative;
+}
+
+
+
+/* =================================== navigation ====================================== */
+
+nav {
+	background: transparent;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.nav-ul {
+	padding-left: 1rem;
+	padding: 0;
+	margin-top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+
+	opacity 0;          /* turn off these two lines for animation */
+    animation fadeIn 2s linear 5.3s 1 normal forwards;
+}
+
+ .nav-link {
+	display: block;
+	padding: 1.3rem;
+	text-decoration: none;
+	color: #ccc;
+}
+
+.nav-link:hover {
+	color: #899cfb;
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* =========================== about section ============================= */
+
+.about-section {
+	padding: 2rem 0;
+}
+
+.about-section p{
+	padding: 0 1rem;
+}
+
+h2 {
+	text-align: center;
+}
+
+.profile-pic {
+	border: 5px double #104166;
+	padding: 1rem;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.honors h4 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* =========================== missions section =========================== */
+
+.missions-section {
+	border-top: 10px solid #353E4B;
+	background-color: #ddd;
+	padding: 1rem 1rem 3rem 1rem;
+}
+
+.mission-grid div {
+	border: 2px solid white;
+	margin-bottom: 2rem;
+}
+
+.missions-section h2 {
+	color: #C5222B;
+	text-align: center;
+	font-style: italic;
+}
+
+.missions-section > p {
+	text-align: center;
+}
+
+.bullet {
+	color: #060710;
+}
+
+.patch {
+	margin-left: 0;
+	margin-top: 0;
+	border 1px solid pink;
+	max-width: 60px;
+}
+
+.navy-wings {
+	margin-left: 0;
+	margin-top: 0;
+	border 1px solid pink;
+	max-width: 100px;
+}
+
+.mission {
+	background-color: #eee;
+	background-color: #f6f6f6;
+	padding: 1rem;
+}
+
+.gemini a, .apollo a {
+	text-decoration: none;
+	color: black;
+}
+
+.gemini a:hover, .apollo a:hover {
+	color: red;
+}
+
+figure .mission-img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.mission-img {
+	border: 1px solid black;
+}
+
+/* =========================== media section ============================= */
+
+.media-section {
+	padding-top: 4rem;
+}
+
+.image-gallery figure {
+	border: 1px solid #104166;
+	margin-bottom: 2rem;
+}
+
+.image-gallery figure figcaption {
+	padding: 10px;
+}
+
+figcaption a {
+	text-decoration: none;
+	color: black;
+}
+
+figcaption a:hover {
+	color: red;
+}
+
+.pretty-hr {
+	display: none;
+	margin:0 3rem 3.4rem 3rem;
+	height: 1px;
+	background: #104166;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, rgba(16, 64, 102, .6)));
+}
+
+.outer-video-container {
+	margin: 2rem 1rem 1rem 1rem;
+}
+
+.video-container {
+	margin: 0 auto;
+
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+	border-right: 1.5px solid blue;
+	border-bottom: 1.5px solid blue;
+	padding: 0 .5rem .5rem 0;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.reflections-container {
+	background-color:  #060710;
+
+	background-image: linear-gradient(to bottom, #07398F 0%, #060710 100%);
+
+	background-image: linear-gradient(to bottom, #3B322B 0%, #151314 100%);
+
+	color: rgba(255, 255, 255, .8);
+	letter-spacing: 1.3px;
+	margin: 0 auto;
+	padding: 2rem 0 3rem 0;
+}
+
+.quote {
+	margin: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.quote q {
+	font-style: normal;
+}
+
+.reflections h3 {
+	letter-spacing: 1.3px;
+	text-align: center;
+	color: rgba(255, 255, 255, .9);
+}
+
+.reflections p {
+	padding: 0 1rem;
+}
+
+.reflections q {
+	font-size: 1.2rem;
+	line-height: 22px;
+}
+
+
+
+/* ========================== footer image =============================== */
+
+.closing-image {
+	background-image: url('../images/last-picture2.jpg');
+	background-repeat: no-repeat;
+
+	background-position: 60% center;  /* for last picture 2 */
+	background-position 20% center; /* for last picture 4. change at 800 */
+
+	background-size: cover;
+	height: 90vh;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	height: 10vh;
+
+	color: rgba(153,153,153, .5);
+
+	background-color: #16110E
+
+}
+
+footer p {
+	margin: 0;
+}
+
+a.copyright {
+	color: rgba(153,153,153, .5);
+	text-decoration: none;
+}
+
+a.copyright:hover {
+	color: #899cfb;
+}
+
+/* ============================= media queries ======================== */
+
+@media screen and (min-width: 440px){
+	.closing-image {
+		background-position: bottom;  /* for last picture 2 */
+	}
+}
+
+@media screen and (min-width: 600px){
+
+	.reflections-container {
+		margin-top: 2rem;
+	}
+
+	.reflections p {
+		padding: 0;
+	}
+
+	.reflections  div {
+		margin: 0 4rem;
+	}
+
+	.mission-grid {
+		padding-top: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	.apollo {
+		grid-column: 1 / -1;
+	}
+
+	.shuttle {
+		grid-column: 1 / -1;
+	}
+
+}
+
+@media screen and (min-width: 700px){
+	.about-section {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.about-section h2 {
+		grid-column: 1 / -1;
+	}
+
+	.honors {
+		grid-row: 3;
+		grid-column: 1 / -1;
+	}
+
+	.image-gallery {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 0;
+		grid-row-gap: 1rem;
+		margin-bottom: 3rem;
+	}
+
+	.tribute {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	.reflections h3 {
+		text-align: center;
+	}
+
+	.reflections-container {
+		grid-row: 2;
+		grid-column: 1 / -1;
+	}
+
+	.quote p {
+		margin-left: 1rem;
+		border-left: 4px double rgba(65,99,134, 1);
+		border-bottom: 4px double rgba(65,99,134, 1);
+
+		border-top: 4px double rgba(197, 34, 43, 0);
+		border-right: 4px double rgba(197, 34, 43, 0);
+
+	    padding: 5%;
+	    transition: border-color .4s ease;
+	}
+
+	.quote p:hover{
+		border-top: 4px double rgba(197, 34, 43, 1);
+		border-right: 4px double rgba(197, 34, 43, 1);
+		border-left: 4px double rgba(65,99,134, 0);
+		border-bottom: 4px double rgba(65,99,134, 0);
+	}
+
+}
+
+@media screen and (min-width: 800px){
+
+	.reflections {
+		border: none;
+		padding-top: 1rem;
+	}
+
+	.reflections div {
+		margin: 0 13%;
+		border-left 1px solid rgba(0, 0, 0, .3);
+
+		border-left: 1px solid rgba(255, 255, 255, .4);
+	}
+
+	.reflections div p {
+		text-align: center;
+		padding: 0 0 .5rem 1.3rem;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.mission-grid {
+		grid-template-columns: 30% 30% 1fr;
+	}
+
+	.apollo {
+		grid-column: 3;
+		grid-row: 1 / 3;
+	}
+
+	.shuttle {
+		grid-row: 2;
+		grid-column: 1 / 3;
+	}
+
+	.closing-image {
+		background-position bottom;  /* for last picture 4 */
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.about-section {
+		padding: 3rem 12%;
+	}
+
+	.image-gallery {
+		grid-template-columns: repeat(4, 1fr);
+		margin-bottom: 1rem;
+	}
+
+	.image-gallery figure {
+		border: none;
+	}
+
+	.image-gallery figure figcaption {
+		padding-top: 10px;
+	}
+
+	.pretty-hr {
+		display: block;
+	}
+
+	.outer-video-container {
+		margin: 2rem 0 0 5rem;
+	}
+
+	.quote {
+		margin: 2rem 5rem 0 0;
+	}
+
+	.reflections div {
+		margin: 0 22%;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
