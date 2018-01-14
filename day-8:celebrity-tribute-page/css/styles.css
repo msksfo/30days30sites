@@ -50,6 +50,7 @@ q {
 	bottom: 3rem;
 	right: .8rem;
 	text-align: center;
+	display: none;
 }
 
 .memoriam-text > * {
@@ -92,7 +93,7 @@ nav {
 	list-style: none;
 
 	opacity: 0;          /* these two lines are for the fade in/out animation */
-    animation: fadeIn 2s linear 5.3s 1 normal forwards;
+    animation: fadeIn 2s linear 7.8s 1 normal forwards;
 }
 
  .nav-link {
@@ -169,14 +170,12 @@ h2 {
 .patch {
 	margin-left: 0;
 	margin-top: 0;
-	border 1px solid pink;
 	max-width: 60px;
 }
 
 .navy-wings {
 	margin-left: 0;
 	margin-top: 0;
-	border 1px solid pink;
 	max-width: 100px;
 }
 
@@ -310,7 +309,7 @@ figcaption a:hover {
 	background-image: url('../images/last-picture2.jpg');
 	background-repeat: no-repeat;
 
-	background-position: 60% center;  /* for last picture 2 */
+	background-position: 40% center;  /* for last picture 2 */
 	background-position 20% center; /* for last picture 4. change at 800 */
 
 	background-size: cover;
@@ -347,11 +346,15 @@ a.copyright:hover {
 
 @media screen and (min-width: 440px){
 	.closing-image {
-		background-position: bottom;  /* for last picture 2 */
+		background-position bottom;  /* for last picture 2 */
 	}
 }
 
 @media screen and (min-width: 600px){
+
+	.closing-image {
+		background-position: bottom center;
+	}
 	
 	.nav-link {
 		padding: 1.3rem;
