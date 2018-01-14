@@ -34,18 +34,5 @@ window.addEventListener('scroll', function(){
 });
 
 
-/*
 
-window.addEventListener('scroll', function(){
-
-	if ( (window.scrollY >= windowHeight - navHeight) && (window.scrollY < reflections.offsetTop) ){
-		standardNav.style.backgroundColor = '#010126';
-	}  else {
-		standardNav.style.backgroundColor = 'transparent';
-
-	}
-	
-});
-
-*/
 
