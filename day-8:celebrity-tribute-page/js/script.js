@@ -7,6 +7,8 @@ var windowHeight = window.innerHeight;
 
 var reflections = document.getElementById('reflections');
 
+var shootingStar = document.getElementById('shooting-star');
+
 $(document).ready(function(){
 
 	$('.memoriam-text').fadeIn(4000);
@@ -20,6 +22,19 @@ $(document).ready(function(){
 
 })
 
+window.addEventListener('scroll', function(){
+
+	if ( (window.scrollY >= windowHeight - navHeight) && (window.scrollY < shootingStar.offsetTop - navHeight) ){
+		standardNav.style.backgroundColor = '#010126';
+	}  else {
+		standardNav.style.backgroundColor = 'transparent';
+
+	}
+	
+});
+
+
+/*
 
 window.addEventListener('scroll', function(){
 
@@ -32,4 +47,5 @@ window.addEventListener('scroll', function(){
 	
 });
 
+*/
 
