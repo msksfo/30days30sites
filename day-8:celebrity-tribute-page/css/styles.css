@@ -45,7 +45,7 @@ q {
 	align-items: center;
 	background-color: #050001;
 
-	display: none;            /* turn off for animation */
+	display none;            /* turn off for animation */
 }
 
 .memoriam-text {
@@ -74,8 +74,6 @@ q {
 	position: relative;
 }
 
-
-
 /* =================================== navigation ====================================== */
 
 nav {
@@ -96,8 +94,8 @@ nav {
 	align-items: center;
 	list-style: none;
 
-	opacity 0;          /* turn off these two lines for animation */
-    animation fadeIn 2s linear 5.3s 1 normal forwards;
+	opacity: 0;          /* turn off these two lines for animation */
+    animation: fadeIn 2s linear 5.3s 1 normal forwards;
 }
 
  .nav-link {
