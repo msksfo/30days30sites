@@ -36,16 +36,11 @@ q {
 	width: 100%;
 	height: 100%;
 
-	color: #7F7F80;
-	color: #969595;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #050001;
-
-	display none;            /* turn off for animation */
 }
 
 .memoriam-text {
@@ -94,13 +89,15 @@ nav {
 	align-items: center;
 	list-style: none;
 
-	opacity: 0;          /* turn off these two lines for animation */
+	opacity: 0;          /* these two lines are for the fade in/out animation */
     animation: fadeIn 2s linear 5.3s 1 normal forwards;
 }
 
  .nav-link {
 	display: block;
-	padding: 1.3rem;
+
+	padding: 1rem;
+
 	text-decoration: none;
 	color: #ccc;
 }
@@ -296,6 +293,7 @@ figcaption a:hover {
 
 .reflections p {
 	padding: 0 1rem;
+	text-align: center;
 }
 
 .reflections q {
@@ -353,7 +351,11 @@ a.copyright:hover {
 }
 
 @media screen and (min-width: 600px){
-
+	
+	.nav-link {
+		padding: 1.3rem;
+	}
+	
 	.reflections-container {
 		margin-top: 2rem;
 	}
@@ -451,13 +453,10 @@ a.copyright:hover {
 
 	.reflections div {
 		margin: 0 13%;
-		border-left 1px solid rgba(0, 0, 0, .3);
-
 		border-left: 1px solid rgba(255, 255, 255, .4);
 	}
 
 	.reflections div p {
-		text-align: center;
 		padding: 0 0 .5rem 1.3rem;
 	}
 }
