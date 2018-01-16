@@ -25,10 +25,22 @@ $(document).ready(function(){
     	});
     }, 4000);
 
+    if (mq){
+      mobileNav.classList.add('animation');
+    } else {
+      //standardNav.classList.add('animation');
+      fadeInNav.classList.add('animation');
+    }
+
+})
+
+
 
    if (mq){
-   	mobileNav.classList.add('animation');
+    console.log('this is the mobile view');
+   	//mobileNav.classList.add('animation');
    	//standardNav.style.display = 'none';
+    
    	window.addEventListener('scroll', function(){
 
    		if ( (window.scrollY >= windowHeight - mobileNavHeight) && (window.scrollY < shootingStar.offsetTop - mobileNavHeight) ){
@@ -44,9 +56,11 @@ $(document).ready(function(){
    		}
    		
    	});
+    
    } else {
+    console.log('this is the desktop view');
    	//standardNav.classList.add('animation');
-   	fadeInNav.classList.add('animation');
+   	//fadeInNav.classList.add('animation');
    	//mobileNav.style.display = 'none';
    	window.addEventListener('scroll', function(){
 
@@ -57,7 +71,7 @@ $(document).ready(function(){
    			standardNav.style.backgroundColor = '#010126';
    		}  else if (window.scrollY >= (shootingStar.offsetTop - navHeight)){
    			standardNav.style.display = 'none';
-   			//standardNav.classList.remove('animation');
+   			standardNav.classList.remove('animation');
    			fadeInNav.classList.remove('animation');
 
    		} else {
@@ -71,50 +85,5 @@ $(document).ready(function(){
 
 
 
-/*
-    if (mq){
-    	window.addEventListener('scroll', function(){
 
-    		if ( (window.scrollY >= windowHeight - mobileNavHeight) && (window.scrollY < shootingStar.offsetTop - mobileNavHeight) ){
-    			mobileNav.style.backgroundColor = '#010126';
-    		} else {
-    			mobileNav.style.backgroundColor = 'transparent';
-    		}
-    		
-    	});
-    } else {
-    	window.addEventListener('scroll', function(){
-
-    		if ( (window.scrollY >= windowHeight - navHeight) && (window.scrollY < shootingStar.offsetTop - navHeight) ){
-    			standardNav.style.backgroundColor = '#010126';
-    		}  else {
-    			standardNav.style.backgroundColor = 'transparent';
-
-    		}
-    		
-    	});
-    }
-
-*/
-
-
-}) 
-
-
-
-/*
-
-window.addEventListener('scroll', function(){
-
-	if ( (window.scrollY >= windowHeight - navHeight) && (window.scrollY < shootingStar.offsetTop - navHeight) ){
-		standardNav.style.backgroundColor = '#010126';
-	}  else {
-		standardNav.style.backgroundColor = 'transparent';
-
-	}
-	
-});
-
-
-*/
 

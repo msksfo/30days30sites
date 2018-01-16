@@ -43,6 +43,7 @@ q {
 	background-color: #050001;
 	color: #969595;
 
+	display none;        /*  display block to turn on animation */
 }
 
 .memoriam-text {
@@ -72,9 +73,48 @@ q {
 	position: relative;
 }
 
+/* ============================== mobile navigation =================================== */
+
+.mobile-nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	overflow: hidden;
+
+	opacity: 0;          /* these two lines are for the fade in/out animation */
+    height: 79.19px;
+}
+
+.animation {
+	animation: fadeIn 2s linear 7.8s 1 normal forwards; 
+}
+
+.fa-moon {
+	color: #ccc;
+	margin: 0 .6rem 0 1rem;
+	float: left;
+}
+
+.fa-moon:hover, .fa-moon:focus {
+	color: #899cfb;
+}
+
+.mobile-nav p {
+	color: #ccc;
+	font-size: 1.2rem;
+}
+
+
+
+
 /* =================================== navigation ====================================== */
 
 nav {
+	display: none;
 	background: transparent;
 	width: 100%;
 	position: fixed;
@@ -93,13 +133,12 @@ nav {
 	list-style: none;
 
 	opacity: 0;          /* these two lines are for the fade in/out animation */
-    animation: fadeIn 2s linear 7.8s 1 normal forwards;
+    animation fadeIn 2s linear 7.8s 1 normal forwards;
 }
 
  .nav-link {
 	display: block;
 	padding: 1rem;
-
 	text-decoration: none;
 	color: #ccc;
 }
@@ -351,6 +390,15 @@ a.copyright:hover {
 }
 
 @media screen and (min-width: 600px){
+	.mobile-nav {
+		display: none;
+	}
+
+	nav {
+		display: block;
+		opacity 0;          /* these two lines are for the fade in/out animation */
+	    animation fadeIn 2s linear 7.8s 1 normal forwards; 
+	}
 
 	.closing-image {
 		background-position: bottom center;
