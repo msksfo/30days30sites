@@ -89,8 +89,41 @@ q {
     height: 79.19px;
 }
 
-.animation {
-	animation: fadeIn 2s linear 7.8s 1 normal forwards; 
+.side-nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: #0a274c;
+	opacity: .9;
+
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: all .4s;
+}
+
+.side-nav a, .btn-close {
+	color: #ccc;
+	display: block;
+	transition: .3s;
+	text-decoration: none;
+	padding: 10px 10px 10px 20px;
+	font-size: 1.1rem;
+}
+
+.side-nav a:hover, .btn-close:hover {
+	color: white;
+	color: #EB4342;
+}
+
+.side-nav .btn-close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 34px;
+	margin-left: 50px;
 }
 
 .fa-moon {
@@ -145,6 +178,10 @@ nav {
 
 .nav-link:hover {
 	color: #899cfb;
+}
+
+.animation {
+	animation: fadeIn 2s linear 7.8s 1 normal forwards; 
 }
 
 @keyframes fadeIn {
@@ -396,6 +433,7 @@ a.copyright:hover {
 
 	nav {
 		display: block;
+
 		opacity 0;          /* these two lines are for the fade in/out animation */
 	    animation fadeIn 2s linear 7.8s 1 normal forwards; 
 	}
