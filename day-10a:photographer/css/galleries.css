@@ -170,7 +170,7 @@ nav a:hover, nav a:focus {
 
 .galleries {
 	border 1px solid pink;
-
+	max-width: 1300px;
 	padding: 1rem;
 	margin: 2rem auto;
 
@@ -197,7 +197,7 @@ nav a:hover, nav a:focus {
 
 	bottom: 4px;      /*  I DON'T UNDERSTAND THIS POSITIONING ??????? */
 
-	opacity: 0;
+	opacity: 1;
 
 	font-size: 1.2rem;
 	letter-spacing: .9px;
@@ -284,8 +284,7 @@ footer {
 		grid-row-gap: 2rem;
 		grid-column-gap: 2rem;
 		padding: 0;
-		margin: 3rem auto;
-		max-width: 1300px;
+		margin: 3rem;
 	}
 
 	.thrust {
@@ -297,6 +296,10 @@ footer {
 		margin: 0 auto;
 	}
 
+	.gallery-name {
+		opacity: 0;
+	}
+
 }
 
 @media screen and (min-width: 950px){
@@ -305,6 +308,16 @@ footer {
 	}
 
 }
+
+@media screen and (min-width: 1300px){
+	.galleries {
+		margin: 3rem auto;
+	}
+
+}
+
+
+
 
 
 

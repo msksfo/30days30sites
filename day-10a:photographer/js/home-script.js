@@ -18,8 +18,11 @@ var num = 1;
 var imagePrefix = 'images/carousel/carousel' 
 var imageSuffix = '.jpg';
 
+//var mq = window.matchMedia("(min-width: 700px)").matches;
 
 /*  ==================== click event listeners on the left/right arrows ============================== */
+
+
 
 left.addEventListener('click', function(){
 	if ( num === 1){
@@ -34,6 +37,8 @@ left.addEventListener('click', function(){
 right.addEventListener('click', function(){
 	if (num <= 6){
 		currentSlide.src = imagePrefix + (num + 1) + imageSuffix;
+		currentSlide.alt = currentSlide.alt;
+		console.log(currentSlide.alt);
 		num ++;
 	} else {
 		num = 1;
@@ -41,6 +46,7 @@ right.addEventListener('click', function(){
 	}
 	
 });
+
 
 
 /* ========================= event listeners for the mobile navigation ================================ */
