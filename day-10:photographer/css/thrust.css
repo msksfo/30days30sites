@@ -169,10 +169,6 @@ nav a:hover, nav a:focus {
 .galleries {
 	border 1px solid pink;
 	padding: 1rem;
-
-	margin: 2rem 0;
-
-	max-width 1240px;
 	max-width: 1583px;
 	
 	margin: 2rem auto;
