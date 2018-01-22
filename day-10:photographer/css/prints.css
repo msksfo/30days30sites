@@ -12,6 +12,8 @@ body {
 	min-height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto auto;
+	max-width: 1583px;
+	margin: 0 auto;
 }
 
 h1 {

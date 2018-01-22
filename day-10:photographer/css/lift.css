@@ -172,7 +172,9 @@ nav a:hover, nav a:focus {
 
 	margin: 2rem 0;
 
-	max-width: 1240px;
+	max-width 1240px;
+
+	max-width: 1500px;
 	margin: 2rem auto;
 }
 

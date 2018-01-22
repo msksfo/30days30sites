@@ -48,13 +48,11 @@ right.addEventListener('click', function(){
 
 mobileNavIcon.addEventListener('click', function(){
 	mobileNav.classList.add('display-mobile');
-	//main.style.marginTop = '168px';
 });
 
 
 closeButton.addEventListener('click', function(){
 	mobileNav.classList.remove('display-mobile');
-	//main.style.marginTop = '2rem';
 });
 
 

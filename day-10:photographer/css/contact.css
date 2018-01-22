@@ -12,6 +12,8 @@ body {
 	min-height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto auto;
+	max-width: 1583px;
+	margin: 0 auto;
 }
 
 h1 {
@@ -158,8 +160,7 @@ nav a:hover, nav a:focus {
 /* ===================================== MAIN SECTION =================================== */
 
 .main {
-	border: 1px solid rgba(0, 0, 0, .3);
-
+	border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
 .main-content {
