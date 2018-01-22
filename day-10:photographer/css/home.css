@@ -157,10 +157,13 @@ nav a:hover, nav a:focus {
 
 .carousel-outer {
 	border 1px solid purple;
-	padding: 0 20px;
+	background-image: url('../images/black-linen.png');
+	background-color: #1a1a1a;
+
+	padding: 2rem 20px;
 	display: flex;
 	align-items: center;
-	margin-top: 2rem;
+	margin-top: 0;
 }
 
 .carousel-inner {
@@ -191,9 +194,8 @@ nav a:hover, nav a:focus {
 /* ========CAROUSEL FIGURES and IMAGES ======= */
 
 .carousel-inner figure {
-	margin: 0 auto;
+	margin: 1.5rem auto;
 	max-width: 100%;
-	margin-bottom: 1.5rem;
 }
 
 .carousel-inner figure:last-of-type {
@@ -299,10 +301,6 @@ footer {
 @media screen and (min-width: 950px){
 	.avphoto {
 		margin-left: 193px;
-	}
-
-	.carousel-outer {
-		margin-top: 2rem;
 	}
 }
 

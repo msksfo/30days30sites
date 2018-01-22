@@ -179,13 +179,13 @@ nav a:hover, nav a:focus {
 
 .gallery figure {
 	position: relative;
-	border: 1px solid white;
 	max-width: 100%;
 	margin: 0 auto 3rem auto;
 }
 
 .gallery figure img {
 	max-width: 100%;
+	border: 1px solid white;
 }
 
 .gallery-name {
