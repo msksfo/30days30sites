@@ -37,8 +37,9 @@ left.addEventListener('click', function(){
 right.addEventListener('click', function(){
 	if (num <= 6){
 		currentSlide.src = imagePrefix + (num + 1) + imageSuffix;
-		currentSlide.alt = currentSlide.alt;
+
 		console.log(currentSlide.alt);
+		
 		num ++;
 	} else {
 		num = 1;
