@@ -19,4 +19,6 @@ Day 8 link ~ https://msksfo.github.io/30days30sites/day-8:celebrity-tribute-page
 
 Day 9 link ~ https://msksfo.github.io/30days30sites/day-9:toy-or-game/index.html
 
+Day 10 link ~ https://msksfo.github.io/30days30sites/day-10:photographer/index.html
+
 
