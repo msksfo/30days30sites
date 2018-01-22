@@ -1,0 +1,293 @@
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: #1A1A1A;
+	color: #ccc;
+	font-size: 1.2rem;
+	font-family: Lato;
+}
+
+.body-container {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto auto;
+	
+}
+
+h1 {
+	margin: 0;
+	padding: .5rem 0 .5rem 1.5rem;
+}
+
+header {
+	background-color: #1a1a1a;
+	
+	background-color: rgba(26, 26, 26, .9);
+
+	padding-bottom: .5rem;
+	padding: .5rem 0;
+	display: flex;
+	align-items: center;
+	position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -o-sticky;
+		position: -ms-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 9;
+}
+
+/* ====================================== BRAND LOGO ================================= */
+
+.brand {
+	flex-grow: 2;
+}
+
+.tng {
+	margin: 0;
+	letter-spacing: 5px;
+	font-size: 2rem;
+	font-family: 'Arizonia', cursive;
+}
+
+.avphoto {
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 1.7px;
+	margin-left: 7px;
+}
+
+/* =============================== MOBILE NAVIGATION ================================== */
+
+.mobile-nav-icon {
+	border-radius: 4px;
+	margin-right: 1.5rem;
+	height: 33px;
+	width: 33px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: all .3s ease;
+}
+
+.mobile-nav {
+	display: none;
+
+	/* why is this not working to create a slide down effect???? */
+	height: 0;
+	transition:  1s ease;
+}
+
+.mobile-nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+/* This class gets added/removed with javascript. This is the mobile menu */
+.display-mobile {
+	padding: 2rem 0;
+	background-color: rgba(43, 43, 43, .9);
+	height: 200px;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 25;
+}
+
+.btn-close {
+	position: absolute;
+	font-size: 2.5rem;
+	top: 10px;
+	right: 10px;
+}
+
+.hamburger {
+	border-top: 2px solid #ccc;
+}
+
+.mobile-nav-icon:hover, .mobile-nav-icon:focus {
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.mobile-nav a:hover, .mobile-nav a:focus {
+	color: #9E4C48;
+}
+
+/* ==================================== STANDARD NAVIGATION ============================= */
+
+nav {
+	flex-grow: 1;
+	display: none;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav a {
+	letter-spacing: .5px;
+	font-size: 1.1rem;
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	color: #ccc;
+	float: left;
+}
+
+nav a:hover, nav a:focus {
+	border-bottom: 2px solid #9E4C48;
+}
+
+/* ===================================== MAIN SECTION =================================== */
+
+.main {
+	background-color: rgba(43, 43, 43, .5);
+	box-shadow: inset 0 0 8px #090909;
+	text-align: center;
+	max-width: 1000px;
+	padding-bottom: 1rem;
+	margin: 1rem auto 2rem auto;
+}
+
+.main h2 {
+	font-size: 1.4rem;
+	letter-spacing: .7px;
+}
+
+.main p {
+	max-width: 650px;
+	margin: 2rem auto;
+	font-size: 1.1rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1.3;
+	padding: 0 1rem;
+	font-style: italic;
+}
+
+.main figure {
+	max-width: 100%;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+/* =============================== SOCIAL MEDIA ICONS ================================== */
+
+.social-media {
+	margin: 0 auto 1rem auto;
+
+}
+.social-link {
+	padding: .5rem;
+}
+
+.social-media a {
+	padding: .5rem;
+	color: rgba(204, 204, 204, 1);
+}
+
+.social-media a:hover {
+	color: #9E4C48;
+}
+
+/* =========================================== FOOTER ==================================== */
+
+footer {
+	margin-bottom: 1rem;
+}
+
+.copyright {
+	color: rgba(204, 204, 204, .4);
+	letter-spacing: 1px;
+	padding: 0 1.5rem;
+	text-align: center;
+	font-size: .8rem;
+	margin-top: 0;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: rgba(204, 204, 204, .5);
+}
+
+.copyright a:hover {
+	color: #9E4C48;
+}
+
+
+/* ========================================= MEDIA QUERIES ============================================ */
+
+@media screen and (min-width: 400px){
+	.tng {
+		font-size: 2.8rem;
+	}
+
+	.avphoto {
+		margin-left: 33px;
+	}
+}
+
+@media screen and (min-width: 700px){
+	
+	.mobile-nav {
+		display: none;
+	}
+
+	.mobile-nav-icon {
+		display: none;
+	}
+
+	nav {
+		display: block;
+	}
+
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 1.5rem;
+	}
+
+	.main h2 {
+		grid-column: 1 / -1;
+	}
+
+}
+
+@media screen and (min-width: 950px){
+	.avphoto {
+		margin-left: 193px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
