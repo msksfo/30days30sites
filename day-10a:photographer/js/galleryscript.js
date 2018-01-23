@@ -5,6 +5,16 @@ var mobileNavIcon = document.getElementById('mobile-nav-icon');
 var main = document.getElementById('main');
 
 
+var galleryImages = document.querySelectorAll('.gallery-image');
+
+/* ======================= disable right click for images ======================= */
+
+for (let i = 0; i < galleryImages.length; i++){
+	galleryImages[i].oncontextmenu = function(){
+		return false;
+	}
+}
+
 
 /* ========================= event listeners for the mobile navigation ================================ */
 
