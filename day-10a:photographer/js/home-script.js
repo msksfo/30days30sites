@@ -22,7 +22,15 @@ var y = 0;
 
 /*  ==================== click event listeners on the left/right arrows ============================== */
 
+/* 
+1. give each figure an id
 
+2.  on right arrow click, set current slide to .hidden
+
+3. create variable that starts at the number of the first figure id. 
+
+4. increment the number ^^  and remove the class .hidden from that one
+*/
 
 left.addEventListener('click', function(){
 
@@ -52,6 +60,9 @@ right.addEventListener('click', function(){
 
 
 /* ========================= event listeners for the mobile navigation ================================ */
+
+/* this is still not working! I want the page to stay wherever it was when the user 
+closes the mobile menu. (currently it scrolls to the top)  */
 
 window.addEventListener('scroll', function(){
 	y = this.scrollY;

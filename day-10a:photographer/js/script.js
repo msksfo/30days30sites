@@ -25,7 +25,13 @@ closeButton.addEventListener('click', function(){
 	main.style.marginTop = '2rem';
 });
 
+/* ========================= disable right click for images ======================= */
 
+for (let i = 0; i < galleryImages.length; i++){
+	galleryImages[i].oncontextmenu = function(){
+		return false;
+	}
+}
 
 /* ======================== event listeners for the galleries ================================  */
 
