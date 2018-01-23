@@ -15,21 +15,33 @@ var quoteNav = document.getElementById('quote-nav');
 
 var artworkSection = document.getElementById('artwork');
 var artworkRect = artworkSection.getBoundingClientRect();
-var artworkOffset = artworkRect.y -1;
+var artworkOffset = artworkRect.y - 1;
 var artworkNav = document.getElementById('artwork-nav');
 
 
 window.onbeforeunload = function () {
+
   window.scrollTo(0, 0);
+  setTimeout(function(){
+
+  }, 1000);
+
+  //window.reload(true);
+  console.log(this.scrollY);
+
+  	aboutNav.classList.remove('aboutHover');
+  	booksNav.classList.remove('booksHover');
+	quoteNav.classList.remove('quoteHover');
+	artworkNav.classList.remove('artworkHover');
 }
+
 
 window.addEventListener('scroll', function(e){
 	/*  change the color of the navigation tabs on scroll, to reflect where in the site the user
 	 currently is, similar to bootstrap scrollspy  */
 
-
-
 	var y = this.scrollY;
+	
 
 	if (y >= aboutOffset && y < booksOffset){
 		aboutNav.classList.add('aboutHover');

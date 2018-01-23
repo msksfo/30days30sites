@@ -18,13 +18,14 @@ var num = 1;
 var imagePrefix = 'images/carousel/carousel' 
 var imageSuffix = '.jpg';
 
-//var mq = window.matchMedia("(min-width: 700px)").matches;
+var y = 0;
 
 /*  ==================== click event listeners on the left/right arrows ============================== */
 
 
 
 left.addEventListener('click', function(){
+
 	if ( num === 1){
 		num = 7;
 		currentSlide.src = imagePrefix + num + imageSuffix;
@@ -52,14 +53,20 @@ right.addEventListener('click', function(){
 
 /* ========================= event listeners for the mobile navigation ================================ */
 
+window.addEventListener('scroll', function(){
+	y = this.scrollY;
+});
 
 mobileNavIcon.addEventListener('click', function(){
 	mobileNav.classList.add('display-mobile');
+	
 });
 
 
 closeButton.addEventListener('click', function(){
 	mobileNav.classList.remove('display-mobile');
+	window.scrollTo(0, y);
+
 });
 
 

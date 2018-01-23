@@ -32,12 +32,13 @@ closeButton.addEventListener('click', function(){
 
 
 if (window.matchMedia("(max-width: 699px)").matches) {
-
+	console.log('mobile');
 	for (let i = 0; i < galleryImages.length; i++){
 			galleryNames[i].style.opacity = '1';		
 	}
     
 } else {
+		console.log('desktop');
 	    for (let i = 0; i < galleryImages.length; i++){
 				galleryNames[i].style.opacity = '0';		
 		}
@@ -86,32 +87,67 @@ function WidthChange(mq){
 
 
 window.addEventListener('resize', function(){
+	mq = window.matchMedia("(min-width: 700px)").matches;
+	
 	if (mq){
 		for (let i = 0; i < galleryImages.length; i++){
+			galleryNames[i].style.opacity = '0';
 			galleryImages[i].addEventListener('mouseover', function(){
 				galleryNames[i].style.opacity = '1';
 			})
-		}
 
-
-		for (let i = 0; i < galleryImages.length; i++){
 			galleryImages[i].addEventListener('mouseout', function(){
 				galleryNames[i].style.opacity = '0';
 			})
 		}
 	} else {
 		for (let i = 0; i < galleryImages.length; i++){
-			galleryNames[i].style.opacity = '1';		
+			galleryNames[i].style.opacity = '1';
+			galleryImages[i].addEventListener('mouseover', function(){
+				galleryNames[i].style.opacity = '1';
+			})
+
+			galleryImages[i].addEventListener('mouseout', function(){
+				galleryNames[i].style.opacity = '1';
+			})		
 		}
 	}
 })
 
+/*
+
+window.addEventListener('resize', function(){
+	mq = window.matchMedia("(min-width: 700px)").matches;
+	console.log(mq);
+	if (mq){
+		for (let i = 0; i < galleryImages.length; i++){
+			galleryNames[i].style.opacity = '0';
+			galleryImages[i].addEventListener('mouseover', mouseOver);
+		}
 
 
+		for (let i = 0; i < galleryImages.length; i++){
+			galleryImages[i].addEventListener('mouseout', mouseOut);
+		}
+	} else {
+		for (let i = 0; i < galleryImages.length; i++){
+			galleryNames[i].style.opacity = '1';
+			galleryImages[i].removeEventListener('mouseover', mouseOver);
+			galleryImages[i].removeEventListener('mouseout', mouseOut);		
+		}
+	}
+})
+
+function mouseOver(index){
+	galleryNames[index].style.opacity = '1';
+}
+
+function mouseOut(index){
+	galleryNames[index].style.opacity = '0';
+}
 
 
-
-
+*/
 
 
 

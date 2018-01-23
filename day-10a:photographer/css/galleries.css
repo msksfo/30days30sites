@@ -82,7 +82,7 @@ header {
 
 	/* why is this not working to create a slide down effect???? */
 	height: 0;
-	transition:  1s ease;
+	transition: height 1s ease;
 }
 
 .mobile-nav a {
