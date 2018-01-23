@@ -188,10 +188,10 @@ nav a:hover, nav a:focus {
 }
 
 .gallery-name {
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .5);
 	color: #ccc;
 	text-decoration: none;
-	padding: 2rem 0;
+	padding: .7rem 0;
 	text-align: center;
 	position: absolute;
 
@@ -298,6 +298,7 @@ footer {
 
 	.gallery-name {
 		opacity: 0;
+		padding: 2rem 0;
 	}
 
 }
