@@ -20,6 +20,16 @@ var imageSuffix = '.jpg';
 
 var y = 0;
 
+var carouselImages = document.querySelectorAll('.carousel-image');
+
+/* ======================== disable right click for images ====================== */
+
+for (let i = 0; i < carouselImages.length; i++){
+	carouselImages[i].oncontextmenu = function(){
+		return false;
+	}
+}
+
 /*  ==================== click event listeners on the left/right arrows ============================== */
 
 /* 
