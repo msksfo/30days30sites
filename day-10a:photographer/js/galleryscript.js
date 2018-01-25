@@ -47,16 +47,47 @@ for (let i = 0; i < galleryImages.length; i++){
 
 
 var index;
-for (let i = 0; i < galleryImages.length; i++){
-	galleryImages[i].addEventListener('click', function(e){
 
-		index = i;
-		
-		lightboxFigures[i].classList.remove('hidden');
-		background.style.display = 'block';
-		lightboxContainer.style.display = 'block';
-	})
+if (window.matchMedia("(min-width: 700px)").matches){
+	for (let i = 0; i < galleryImages.length; i++){
+		galleryImages[i].addEventListener('click', function(e){
+
+			index = i;
+			
+			lightboxFigures[i].classList.remove('hidden');
+			background.style.display = 'block';
+			lightboxContainer.style.display = 'block';
+		})
+	}
 }
+
+window.addEventListener('resize', function(){
+	var mq = window.matchMedia("(min-width: 700px)").matches;
+
+	if (mq){
+		for (let i = 0; i < galleryImages.length; i++){
+			galleryImages[i].addEventListener('click', function(e){
+
+				index = i;
+				
+				lightboxFigures[i].classList.remove('hidden');
+				background.style.display = 'block';
+				lightboxContainer.style.display = 'block';
+			})
+		}
+	} else {  /* I need another way to do this! */
+		for (let i = 0; i < galleryImages.length; i++){
+			galleryImages[i].addEventListener('click', function(e){
+
+				index = i;
+				
+				lightboxFigures[i].classList.add('hidden');
+				background.style.display = 'none';
+				lightboxContainer.style.display = 'none';
+			})
+		}
+	}
+});
 
 background.addEventListener('click', function(){
 	for (var i = 0; i < lightboxFigures.length; i++){

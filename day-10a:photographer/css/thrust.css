@@ -223,8 +223,8 @@ nav a:hover, nav a:focus {
 
 .right {
 	position: absolute;
-	bottom: 50%;  /*    WHY ISN'T THIS WORKING?????  */
 	left: calc(100% - 13.72px);
+	top: 50%;
 	transform: translateY(-50%);
 	opacity: .8;
 }

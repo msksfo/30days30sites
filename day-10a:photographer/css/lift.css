@@ -159,13 +159,9 @@ nav a:hover, nav a:focus {
 /* ===================================== MAIN SECTION =================================== */
 
 .main {
-	border 1px solid red;
-	position: relative;
-
 	margin-bottom: 1.2rem;
 	background-image: url('../images/black-linen.png');
 	background-color: #1a1a1a;
-
 	transition: all .3s ease;
 }
 
@@ -181,7 +177,6 @@ nav a:hover, nav a:focus {
 	display: flex;
 	align-items: center;
 	position: relative;
-
 	border: 1px solid white;
 
 	max-width: 100%;
@@ -228,8 +223,8 @@ nav a:hover, nav a:focus {
 
 .right {
 	position: absolute;
-	bottom: 50%;  /*    WHY ISN'T THIS WORKING?????  */
 	left: calc(100% - 13.72px);
+	top: 50%;
 	transform: translateY(-50%);
 	opacity: .8;
 }
