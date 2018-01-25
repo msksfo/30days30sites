@@ -8,19 +8,10 @@ var main = document.getElementById('main');
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 
-
-/* current slide */
-var currentSlide = document.getElementById('current-slide');
-
-
-/* move the slides along by changing the image file path */
-var num = 1;
-var imagePrefix = 'images/carousel/carousel' 
-var imageSuffix = '.jpg';
-
 var y = 0;
 
-var carouselImages = document.querySelectorAll('.carousel-image');
+var carouselImages = document.querySelectorAll('.carousel-image'); // figure elements
+
 
 /* ======================== disable right click for images ====================== */
 
@@ -32,15 +23,57 @@ for (let i = 0; i < carouselImages.length; i++){
 
 /*  ==================== click event listeners on the left/right arrows ============================== */
 
-/* 
-1. give each figure an id
 
-2.  on right arrow click, set current slide to .hidden
+var index = 0;
 
-3. create variable that starts at the number of the first figure id. 
+right.addEventListener('click', function(){
+	var current = carouselImages[index];
+	var next = carouselImages[index + 1];
 
-4. increment the number ^^  and remove the class .hidden from that one
-*/
+	if (index < (carouselImages.length - 1)){
+		current.classList.add('hidden');
+		next.classList.remove('hidden');
+		index ++;
+	} else {
+		current.classList.add('hidden');
+		index =  0;		
+		carouselImages[0].classList.remove('hidden');
+		
+	}
+	
+})
+
+left.addEventListener('click', function(){
+	var current = carouselImages[index];
+	var previous = carouselImages[index - 1];
+
+	if (index === 0){
+		current.classList.add('hidden');
+		index = (carouselImages.length - 1);		
+		carouselImages[(carouselImages.length - 1)].classList.remove('hidden');
+		
+	} else {
+		current.classList.add('hidden');
+		previous.classList.remove('hidden');
+		index --;
+	}
+
+})
+
+/*
+
+this was my intial code for the carousel. not a great way of doing it, because alt text could not be differet 
+for each photo. also becasue if the user resized browser from desktop size to < 700px, there would be a 
+duplicate photo in the spot of the first image
+
+//current slide 
+var currentSlide = document.getElementById('current-slide');
+
+
+ //move the slides along by changing the image file path 
+var num = 1;
+var imagePrefix = 'images/carousel/carousel' 
+var imageSuffix = '.jpg';
 
 left.addEventListener('click', function(){
 
@@ -66,7 +99,7 @@ right.addEventListener('click', function(){
 	}
 	
 });
-
+*/
 
 
 /* ========================= event listeners for the mobile navigation ================================ */
