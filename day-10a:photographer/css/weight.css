@@ -188,6 +188,59 @@ nav a:hover, nav a:focus {
 	max-width: 100%;
 }
 
+/* =============================== lightbox ================================== */
+
+.lightbox-container {
+	width: 85%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid white;
+	z-index: 100;
+	display: none;
+}
+
+.lightbox-figure {
+	max-width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.lightbox-img {
+	max-width: 100%;
+}
+
+/* ========================== left/right lightbox arrows ================= */
+.left {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: .8;
+}
+
+.right {
+	position: absolute;
+	bottom: 50%;  /*    WHY ISN'T THIS WORKING?????  */
+	left: calc(100% - 13.72px);
+	transform: translateY(-50%);
+	opacity: .8;
+}
+
+ /* ============ semi transparent background so lightbox images pop ============ */
+.background {
+	z-index: 50;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, .9);
+	display: none;
+}
+
 
 /* =============================== SOCIAL MEDIA ICONS ================================== */
 
@@ -289,6 +342,10 @@ footer {
 @media screen and (min-width: 1000px){
 	.galleries {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.lightbox-container {
+		max-width: 65%;
 	}
 }
 
