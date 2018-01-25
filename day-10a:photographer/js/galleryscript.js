@@ -48,6 +48,7 @@ for (let i = 0; i < galleryImages.length; i++){
 
 var index;
 
+// the lightbox should only be functional above 700px;
 if (window.matchMedia("(min-width: 700px)").matches){
 	for (let i = 0; i < galleryImages.length; i++){
 		galleryImages[i].addEventListener('click', function(e){
@@ -61,6 +62,7 @@ if (window.matchMedia("(min-width: 700px)").matches){
 	}
 }
 
+// this should toggle the lightbox on/off if the user resizes the browser
 window.addEventListener('resize', function(){
 	var mq = window.matchMedia("(min-width: 700px)").matches;
 
@@ -89,6 +91,7 @@ window.addEventListener('resize', function(){
 	}
 });
 
+// close the lightbox when the user clicks anywhere outside of the photo
 background.addEventListener('click', function(){
 	for (var i = 0; i < lightboxFigures.length; i++){
 		lightboxFigures[i].classList.add('hidden');
