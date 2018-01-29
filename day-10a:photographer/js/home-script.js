@@ -4,6 +4,7 @@ var mobileNav = document.getElementById('mobile-nav');
 var mobileNavIcon = document.getElementById('mobile-nav-icon');
 var main = document.getElementById('main');
 
+
 /* left/right arrows for image carousel*/
 var left = document.getElementById('left');
 var right = document.getElementById('right');
@@ -22,7 +23,6 @@ for (let i = 0; i < carouselImages.length; i++){
 }
 
 /*  ==================== click event listeners on the left/right arrows ============================== */
-
 
 var index = 0;
 
@@ -116,29 +116,17 @@ mobileNavIcon.addEventListener('click', function(){
 	
 });
 
+mobileNav.addEventListener('click', function(){
+	mobileNav.classList.remove('display-mobile');
+	window.scrollTo(0, y);
+})
+
 
 closeButton.addEventListener('click', function(){
 	mobileNav.classList.remove('display-mobile');
 	window.scrollTo(0, y);
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
