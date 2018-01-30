@@ -714,6 +714,10 @@ footer {
 		grid-template-columns: 55% 45%;
 	}
 
+	.about-text {
+		margin: 0 auto 17.6px auto;
+	}
+
 	.menu-text {
 		max-width: 80%;
 		position: relative;
