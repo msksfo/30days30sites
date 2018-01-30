@@ -178,14 +178,14 @@ h3:nth-of-type(2) {
 .about-figure{
 	max-width: 100%;	
 	margin-top: 1.36rem;
-	display: flex;
-	justify-content: center;
 }
 
 .about-img {
 	max-width: 100%;
-	height: auto;
 	border: 1px solid black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% -50%);
 }
 
 .sisig-text {
