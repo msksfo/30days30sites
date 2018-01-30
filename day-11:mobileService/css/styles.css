@@ -1,0 +1,805 @@
+body {
+	box-sizing: border-box;
+	background-color: #fff;
+	margin: 0; 
+	padding: 0;
+	font-size: 1.1rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* =========== offset to account for fixed header ================ */
+
+.nav-offset {
+	display: block;
+	visibility: hidden;
+	margin-top: -72px;
+	height: 72px;
+}
+
+/* ===================== header ================================== */
+
+header {
+	display: flex;
+	justify-content: space-between;
+
+	opacity: 0;
+	transition: opacity 2s ease;
+	background-color: rgba(55, 139, 136, 1); /* transparent on scroll? */
+
+	position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -o-sticky;
+		position: -ms-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 5;
+}
+
+.transparent {
+	background-color: rgba(55, 139, 136, .8);
+}
+
+h1 {
+	margin: 0;
+	padding: 1rem;
+	color: white;
+}
+
+/* =============================== MOBILE NAVIGATION ================================== */
+
+.mobile-nav-icon {
+	border-radius: 4px;
+	margin-right: 1.5rem;
+	margin-top: 15px;
+	height: 33px;
+	width: 33px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: all .3s ease;
+}
+
+.mobile-nav {
+	display: none;
+
+	/* why is this not working to create a slide down effect???? */
+	height: 0;
+	transition:  1s ease;
+}
+
+.mobile-nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.mobile-nav a:hover, .mobile-nav a:focus {
+	color: #a5182a;
+	background-color: white;
+	border-radius: 5px;
+}
+
+/* This class gets added/removed with javascript. This is the mobile menu */
+.display-mobile {
+	padding: 2rem 0;
+	background-color: rgba(43, 43, 43, .9);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 25;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn-close {
+	position: absolute;
+	font-size: 2.5rem;
+	top: 10px;
+	right: 10px;
+}
+
+.hamburger {
+	border-top: 2px solid #fff;
+}
+
+.mobile-nav-icon:hover, .mobile-nav-icon:focus {
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/* ===================== standard navigation ============================ */
+
+.standard-nav {
+	display: none;
+}
+
+.standard-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px;
+	transition: all .2s ease;
+}
+
+.nav-link:hover {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	color: #0D3180;
+	transform: scale(1.1);
+}
+
+/* ===================== sisit truck hero image =========================== */
+
+.sisig-truck {
+	background: url('../images/senorsisig-truck.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:90vh;
+	background-attachment: scroll;
+}
+
+/* ================================= about section ================================ */
+
+.about {
+	border-top: 10px solid #0D3180;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+.fusion {
+	border-top: 1px solid #4756A4;
+	border-bottom:1px solid #4756A4;
+	padding: 1rem 0;
+}
+
+h3:nth-of-type(2) {
+	border-top 1px solid #4756A4;
+	padding-top: .5rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.about-figure{
+	max-width: 100%;	
+	margin-top: 1.36rem;
+}
+
+.about-img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid black;
+}
+
+.sisig-text {
+	padding: 0 1rem;
+	max-width: 600px;
+	margin: 17.6px auto;
+	text-align: justify;
+	letter-spacing: .5px
+}
+
+.sisig-text a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.sisig-text a:hover {
+	color: red;
+	transform: scale(1.2);
+}
+
+.about-text {
+	padding: 0 1rem;
+	max-width: 600px;
+	margin: 17.6px auto;
+	text-align: justify;
+	letter-spacing: .5px
+}
+
+.founders-figure, .founders-img {
+	max-width: 100%;
+}
+
+.founders-figure {
+	border: 1px solid #4756A4;
+	padding: 1rem;
+}
+
+.founders-img {
+	border: 1px solid black;
+	display: block;
+	margin: 0 auto;
+}
+
+figcaption{
+	text-align: center;
+	padding-top: .5rem;
+}
+
+
+/* =========================== menu section ============================== */
+
+.menu {
+	padding: 3%;
+}
+
+.menu-img {
+	background-image: url('../images/menu.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 90vh;
+}
+
+.menu-text h4 {
+	text-align: center;
+	padding-top: 2rem;
+	margin-bottom: .5rem;
+}
+
+.menu-text h3 {
+	color: #a5182a;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+.menu-text {
+	background-color: rgba(255, 255, 255, .71);
+}
+
+.menu-text p{
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 1rem 1rem 1rem;
+}
+
+/* ======================== calendar section ======================== */
+
+.calendar {
+	max-width: 1000px;
+	margin: 2rem auto 2rem auto;
+	border-top: 1px solid #4756A4;
+	padding-bottom: 2rem;
+}
+
+.calendar h3 {
+	color: #261224;
+}
+
+.map-container {
+	min-width: 400px;
+	max-width: 500px;
+	margin: 2rem auto;
+	
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 75%;
+}
+
+.map {	
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 5%;
+	width: 90%;
+	height: 100%;
+
+}
+
+.card {
+	height: 100px;
+	border: 1px solid #C53C51;
+	margin: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .4s ease;
+}
+
+.location-events {
+	background-color: rgba(0, 0, 0, .9);
+	color: rgba(255, 255, 255, .8);
+	display: none;
+	position: fixed;
+	z-index: 5;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.close-events {
+	font-size: 2.2rem;
+	position: absolute;
+	left: calc(100% - 40px);
+	transition: .3s ease;
+}
+
+.close-events:hover {
+	color: red;
+}
+
+.event {
+	text-align: center;
+}
+
+.event:after {
+	display: block;
+	margin: 0 auto;
+	content: '';
+	height: 1.5rem;
+	width: 50%;
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+	margin-bottom: 1.5rem;
+}
+
+.event:first-of-type {
+	margin-top: 3.5rem;
+}
+
+.event address {
+	margin-bottom: 1rem;
+}
+
+.event h4 {
+	color: #a5182a;
+
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: 2px;
+	margin-bottom: 0;
+}
+
+.days {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+.hours {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}
+
+/* ======================= modal local of events ======================= */
+
+.event-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, .9);
+	color: rgba(255, 255, 255, .8);
+
+	display: none;
+	opacity 0;
+	transition: opacity 2s ease;
+
+}
+
+.transition {
+	display: block;
+	opacity: 1;
+}
+
+ /* ============ make an accordian appearance on the cards ============ */
+
+.accordian {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.one {
+	transform: skewX(10deg);
+	box-shadow: 0 3px 10px -2px rgba(213, 213, 213, 1);
+	border-bottom: 1px solid #D5D5D3;
+
+	background-image: url('../images/card-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.two {
+	border-top: none;
+	border-bottom: none;
+
+	transform: skewX(-10deg);
+	box-shadow: 0 3px 10px -2px rgba(213, 213, 213, 1);
+
+	background-image: url('../images/card-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.three {
+	border-top: 1px solid #D5D5D3;
+	transform: skewX(10deg);
+
+	background-image: url('../images/card-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-position: bottom;
+}
+
+.p-one {
+	transform: skewX(10deg);
+}
+
+.p-two {
+	transform: skewX(-10deg);
+}
+
+
+.city {
+	padding: .3rem;
+	background-color: #3271aa;
+	color: white;
+}
+
+.city:hover {
+	background-color: #498E29;
+	color: white;
+}
+
+
+/* ============================ press section ========================== */
+
+.press {
+	background-color: #071942;
+	color: white;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding: 2rem .5rem;
+}
+
+.press-list {
+	margin-bottom: 2rem;
+	border: 1px solid white;
+	padding: 0;
+	list-style: none;
+	max-width: 1000px;
+}
+
+.press-list li {
+	padding: 1rem 0 0 0;
+	text-align: center;
+}
+
+.press-list li:last-child {
+	padding-bottom: 1rem;
+}
+
+
+.press-link {
+	display: block;
+	text-decoration: none;
+
+	color: rgba(255, 255, 255, .7);
+	
+	transition: all .3s ease;
+}
+
+.press-link:hover, .press-link:focus {
+	color: rgba(255, 255, 255, 1);
+	transform: scale(1.1);
+}
+
+.video-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+}
+
+.video {	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ========================== subscribe div ============================ */
+
+.subscribe {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	font-size: 1.6rem;
+}
+
+.subscribe-input {
+	padding: .5rem;
+	font-size: 1.2rem;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.subscribe-input:focus {
+	border: 2px solid rgba(55, 139, 136, 1);
+	border-radius: 4px;
+}
+
+.subscribe-button {
+	border-radius: 4px;
+	color: white;
+	background-color: rgba(55, 139, 136, 1); 
+	outline: none;
+	transition: all .4s ease;
+	padding: .5rem;
+	font-size: 1.2rem;
+}
+
+.subscribe-button:hover, .subscribe-button:focus {
+	border-radius: 4px;
+	color: rgba(55, 139, 136, 1); 
+	background-color: white;
+	outline: none;
+	border: 2px solid rgba(55, 139, 136, 1);
+}
+
+.subscribe h3 {
+	margin: 0 0 0 0;
+}
+
+.subscribe h5 {
+	padding: 0 1rem;
+	text-align: center;
+	margin: 1rem auto 1.5rem auto;
+	max-width: 500px;
+
+}
+
+.subscribe-action {
+	display: flex;
+	justify-content: center;
+}
+
+
+.contact-div {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+/* ======================== footer ============================ */
+
+footer {
+	background-color: rgba(55, 139, 136, 1);
+	border: 1px solid purple;
+}
+
+.social-media {
+	padding: 1rem;
+	max-width: 400px;
+	margin: 1rem auto 0 auto;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr
+}
+
+.social-media a {
+	color: white;
+}
+
+.social-media a:hover, .social-media a:focus {
+	color: #4756A4;
+}
+
+.copyright {
+	text-align: center;
+	color: #555;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: #555;
+}
+
+.copyright a:hover, .copyright a:focus {
+	color: white;
+}
+
+/* =========================== media queries ========================= */
+
+@media screen and (min-width: 420px){
+	.map {
+		display block;
+	}
+}
+
+@media screen and (min-width: 700px){
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.mobile-nav-icon {
+		display: none;
+	}
+
+	h1 {
+		text-align: center;
+	}
+	.standard-nav {
+		display: block;
+	}
+
+	.standard-nav ul {
+		height: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		grid-gap: 1.5rem;
+	}
+
+	.sisig-truck {
+		background-attachment: fixed;
+		background-size: 60%;
+
+		background-repeat: no-repeat;
+		background-position-y 3rem;
+
+		min-height: 90vh;
+		background-attachment: fixed;
+	}
+
+	.about {
+		padding-top: 2rem;
+	}
+	
+	.press-list {
+		padding: 1rem 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.press-list li {
+		padding: .5rem 0 0 0;
+	}
+
+	.press-list li:last-child {
+		padding-bottom: 0;
+	}
+
+
+	.press-link:hover, .press-link:focus {
+		color: rgba(255, 255, 255, 1);
+		transform: scale(1.1);
+	}
+}
+
+@media screen and (min-width: 800px){
+	.about {
+		display: grid;
+		grid-template-columns: 60% 40%;
+	}
+
+	.menu-text {
+		max-width: 80%;
+		position: relative;
+		top: 2rem;
+		margin: 0 auto;
+		border-radius: 8px;
+	}
+
+	.calendar {
+		display: grid;
+		grid-template-columns: 1fr 400px;
+		grid-gap: 1rem;
+	}
+
+	.accordian {
+		grid-column: 1;
+		margin: 0;
+		margin-left: .5rem;
+		width: 100%;
+	}
+
+	.card {
+		margin-top: 0;
+		height: 150px;
+	}
+
+	.event:first-of-type {
+		margin-top: 0;
+	}
+
+	.calendar h3 {
+		grid-column: 1 / -1;
+	}
+
+	.map-container {
+		margin-top: 0;
+	}
+
+	.days {
+		margin: 0 0;
+	}
+
+	.subscribe {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	header {
+		grid-template-columns: 200px 1fr 2fr;
+	}
+
+	.standard-nav {
+		grid-column: 3;
+	}
+
+	.press-list {
+		margin: 1.1rem auto 2rem auto;
+	}
+
+	.subscribe {
+		margin: 0 2rem;
+	}
+
+/*   this is not really working. why not????? 
+
+	.sisig-truck {
+		background-size: 40%;
+	}
+*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

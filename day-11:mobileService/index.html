@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Day 11</title>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		
+		<!-- font awesome -->
+		<script src="https://use.fontawesome.com/5f1d0adad0.js"></script>
+
+		<!-- jquery -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+		<!-- emoji css -->
+		<link rel='stylesheet' href='https://afeld.github.io/emoji-css/emoji.css'>
+
+		<link rel='stylesheet' type='text/css' href='css/styles.css'>
+		
+	</head>
+
+	<body>
+		<div class='container'>
+
+			<div id='mobile-nav' class='mobile-nav'>
+				<a href='#' id='btn-close' class='btn-close'>&times;</a>
+
+				<a href='#about'>ABOUT</a>
+				<a href='#menu'>MENU</a>
+				<a href='#calendar'>CALENDAR</a>
+				<a href='#press'>PRESS</a>
+				<a href='#contact'>CONTACT</a>
+			</div>
+
+			<header id='header'>
+				<h1>Señor Sisig</h1>
+				<nav class='standard-nav'>
+					<ul>
+						<li><a class='nav-link' href='#about'>ABOUT</a></li>
+						<li><a class='nav-link' href='#menu'>MENU</a></li>
+						<li><a class='nav-link' href='#calendar'>CALENDAR</a></li>
+						<li><a class='nav-link' href='#press'>PRESS</a></li>
+						<li><a class='nav-link' href='#contact'>CONTACT</a></li>						
+					</ul>
+				</nav>
+
+				<div id='mobile-nav-icon' class='mobile-nav-icon'>
+					<div class='hamburger'></div>
+					<div class='hamburger'></div>
+					<div class='hamburger'></div>
+				</div>
+			</header>
+
+			<div id='sisig-truck' class='sisig-truck'></div>
+			
+			<span id='about' class='nav-offset'></span>
+			<div class='about'>
+				<div class='about-sisig'>
+					<figure class='about-figure'>						
+						<img class='about-img' src='images/rice-plate-copy2.jpg'>
+					</figure>
+
+					<div class='sisig-text'>
+						<h3>What Is Sisig</h3>
+						<p>Read what Anthony Bourdain has to say about <a href='http://www.foodandwine.com/news/sisig-filipino-food-anthony-bourdain-says-will-win-your-heart' target='_blank' rel='noopener'>sisig</a>. It's really good. Just eat it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident possimus hic porro, consequatur dolore quaerat nobis quam, placeat eius sint, natus, dolor doloribus dolorum quibusdam veniam recusandae eligendi quidem eos!</p>
+						
+						<div class='fusion'>
+							<h3><span>Filipino  <i class='em em-flag-ph'></i> </span> <span>Mexican  <i class='em em-flag-mx'></i> </span> <span>Fusion  <i class='em em-heart' ></i></span></h3>
+						
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident possimus hic porro, consequatur dolore quaerat nobis quam, placeat eius sint, natus, dolor doloribus dolorum quibusdam veniam recusandae eligendi quidem eos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur at non ut perspiciatis dolore optio in cumque ex!</p>
+						</div>
+					</div> 
+				</div> <!-- close .about-sisig -->
+			
+				<div class='about-text'>
+					<h2>Who Are We</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit animi tenetur pariatur provident fuga, nobis a earum, porro! Reiciendis perspiciatis, optio, velit iure voluptates veritatis ut earum expedita labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusantium qui nam, consectetur eius ducimus, temporibus veritatis, odit perspiciatis consequatur sunt unde, quas laboriosam id. Voluptatem optio enim deleniti quis.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae odit animi tenetur pariatur provident fuga, nobis a earum, porro! Reiciendis perspiciatis, optio, velit iure voluptates veritatis ut earum expedita labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea accusantium qui nam, consectetur eius ducimus, temporibus veritatis, odit perspiciatis consequatur sunt unde, quas laboriosam id. Voluptatem optio enim deleniti quis.</p>
+
+					<figure class='founders-figure'>
+						<img class='founders-img' src='images/gil-and-evan.jpg' alt='Founders Gil and Even in front of their food truck.'>
+						<figcaption>Señor Sisig Founders-  Even Kidera and Gil Payumo</figcaption>
+					</figure>
+				</div> <!-- close .about-text -->
+
+			</div> <!-- close .about -->
+
+
+			<span id='menu' class='nav-offset'></span>
+			<div class='menu'>
+				<div class='menu-img'>
+					<div class='menu-text'>
+						<h4>Our Food</h4>
+						<h3>Inspired ~ Creative ~ Locally Sourced</h3>
+						<p>We serve tacos, burritos, nachos, fries, rice plates, and salads. All served with your choice of pork, chicken or tofu, with the option to silog it (that's add a fried egg on top, for the non tagalog speaking customer).</p>
+					</div>
+				</div>				
+			</div>
+			
+			<span id='calendar' class='nav-offset'></span>
+			<div class='calendar'>
+				<h3>Events & Locations</h3>
+				
+				<div id='accordian' class='accordian'>
+					<div>
+						<div class='card one'>
+							<p class='p-two city'>SAN FRANCISCO</p>
+						</div>
+
+						<div class='card two'>
+							<p class='p-one city'>OAKLAND</p>
+						</div>
+
+						<div class='card three'>
+							<p class='p-two city'>SAN MATEO</p>
+						</div>
+					</div>
+					
+					<!-- the following are modals for width > 800px -->
+					<div class='event-modal'>
+						<div class='event'>
+							<h4>Powell & Ellis</h4>
+							<p class='days'>Mon-Fri</p>
+							<p class='hours'>Hours: 11:00 - 14:00</p>
+							<address>
+								120 Ellis St.<br>
+								San Fransisco, CA 94102
+							</address>
+						</div>
+
+						<div class='event'>
+							<h4>Pine</h4>
+							<p class='days'>Mon-Fri</p>
+							<p class='hours'>Hours: 17:00 - 20:00</p>
+							<address>
+								300 Pine<br>
+								San Fransisco, CA 94104
+							</address>
+						</div>
+
+						<div class='event'>
+							<h4>Valencia</h4>
+							<p class='days'>Sat-Sun</p>
+							<p class='hours'>Hours: 11:00 - 17:00</p>
+							<address>
+								701 Valencia<br>
+								San Fransisco, CA 94110
+							</address>
+						</div>
+					</div> <!-- close sfo-events-modal -->
+
+					<div class='event-modal'>
+						<div class='event'>
+							<h4>Oak Street</h4>
+							<p class='days'>Mon-Fri</p>
+							<p class='hours'>Hours: 11:00 - 14:00</p>
+							<address>
+								1000 Oak Street<br>
+								Oakland, CA 94607
+							</address>
+						</div>
+
+						<div class='event'>
+							<h4>Somewhere In Oakland</h4>
+							<p class='days'>Mon-Fri</p>
+							<p class='hours'>Hours: 17:00 - 20:00</p>
+							<address>
+								1234 Acrossthebay Ave.<br>
+								Oakland, CA 94607
+							</address>
+						</div>
+
+						<div class='event'>
+							<h4>Somewhere Else In Oakland</h4>
+							<p class='days'>Sat-Sun</p>
+							<p class='hours'>Hours: 11:00 - 17:00</p>
+							<address>
+								1122 Boogie Boogie Avenue<br>
+								Oakland, CA 94607
+							</address>
+						</div>
+					</div> <!-- close oak-events-modal -->
+
+					<div class='event-modal'>
+						<div class='event'>
+							<h4>Burlingame</h4>
+							<p class='days'>Mon-Fri</p>
+							<p class='hours'>Hours: 11:00 - 14:00</p>
+							<address>
+								California At Carmelita St.<br>
+								Burlingame, CA 94010
+							</address>
+						</div>
+
+						<div class='event'>
+							<h4>Belmont</h4>
+							<p class='days'>Mon-Fri</p>
+							<p class='hours'>Hours: 17:00 - 20:00</p>
+							<address>
+								El Camino and O'neill Ave.<br>
+								Belmont, CA 94002
+							</address>
+						</div>
+
+						<div class='event'>
+							<h4>Hiller Aviation Museum</h4>
+							<p class='days'>Sat-Sun</p>
+							<p class='hours'>Hours: 11:00 - 17:00</p>
+							<address>
+								601 Skyway Rd.<br>
+								San Carlos, CA 94070
+							</address>
+						</div>
+					</div> <!-- close sanmateo-events-modal -->
+				</div> <!-- close .accordian -->
+
+
+				<!-- these are the modals for width < 800px -->
+				<div class='location-events'>
+					<span class='close-events'>&times</span>
+					<div class='event'>
+						<h4>Powell & Ellis</h4>
+						<p class='days'>Mon-Fri</p>
+						<p class='hours'>Hours: 11:00 - 14:00</p>
+						<address>
+							120 Ellis St.<br>
+							San Fransisco, CA 94102
+						</address>
+					</div>
+
+					<div class='event'>
+						<h4>Pine</h4>
+						<p class='days'>Mon-Fri</p>
+						<p class='hours'>Hours: 17:00 - 20:00</p>
+						<address>
+							300 Pine<br>
+							San Fransisco, CA 94104
+						</address>
+					</div>
+
+					<div class='event'>
+						<h4>Valencia</h4>
+						<p class='days'>Sat-Sun</p>
+						<p class='hours'>Hours: 11:00 - 17:00</p>
+						<address>
+							701 Valencia<br>
+							San Fransisco, CA 94110
+						</address>
+					</div>
+				</div>
+
+				<div class='location-events'>
+					<span class='close-events'>&times</span>
+					<div class='event'>
+						<h4>Oak Street</h4>
+						<p class='days'>Mon-Fri</p>
+						<p class='hours'>Hours: 11:00 - 14:00</p>
+						<address>
+							1000 Oak Street<br>
+							Oakland, CA 94607
+						</address>
+					</div>
+
+					<div class='event'>
+						<h4>Somewhere In Oakland</h4>
+						<p class='days'>Mon-Fri</p>
+						<p class='hours'>Hours: 17:00 - 20:00</p>
+						<address>
+							1234 Acrossthebay Ave.<br>
+							Oakland, CA 94607
+						</address>
+					</div>
+
+					<div class='event'>
+						<h4>Somewhere Else In Oakland</h4>
+						<p class='days'>Sat-Sun</p>
+						<p class='hours'>Hours: 11:00 - 17:00</p>
+						<address>
+							1122 Boogie Boogie Avenue<br>
+							Oakland, CA 94607
+						</address>
+					</div>
+				</div>
+
+				<div class='location-events'>
+					<span class='close-events'>&times</span>
+					<div class='event'>
+						<h4>Burlingame</h4>
+						<p class='days'>Mon-Fri</p>
+						<p class='hours'>Hours: 11:00 - 14:00</p>
+						<address>
+							California At Carmelita St.<br>
+							Burlingame, CA 94010
+						</address>
+					</div>
+
+					<div class='event'>
+						<h4>Belmont</h4>
+						<p class='days'>Mon-Fri</p>
+						<p class='hours'>Hours: 17:00 - 20:00</p>
+						<address>
+							El Camino and O'neill Ave.<br>
+							Belmont, CA 94002
+						</address>
+					</div>
+
+					<div class='event'>
+						<h4>Hiller Aviation Museum</h4>
+						<p class='days'>Sat-Sun</p>
+						<p class='hours'>Hours: 11:00 - 17:00</p>
+						<address>
+							601 Skyway Rd.<br>
+							San Carlos, CA 94070
+						</address>
+					</div>
+				</div>
+
+				<div class='map-container'>
+					<iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.196037731386!2d-122.4082285319285!3d37.78544530993576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f5cc7afe5%3A0xda1d1fb039bc884f!2s120+Ellis+St%2C+San+Francisco%2C+CA+94102!5e0!3m2!1sen!2sus!4v1517203143270" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div> <!-- close .calendar -->
+
+			<span id='press' class='nav-offset'></span>
+			<div class='press'>
+				<h3>Press</h3>
+
+				<ul class='press-list'>
+					<li><a class='press-link' href='http://sanfrancisco.cbslocal.com/top-lists/best-food-trucks-in-san-francisco/' target='_blank' rel='noopener'>CBS</a></li>
+					<li><a class='press-link' href='https://techcrunch.com/2017/03/01/squares-caviar-now-lets-people-order-food-ahead-for-pickup/' target='_blank' rel='noopener'>TechCrunch</a></li>
+					<li><a class='press-link' href='http://www.sfgate.com/food/article/The-best-food-trucks-in-San-Francisco-according-11206374.php#photo-13045057' target='_blank' rel='noopener'>SFGate</a></li>
+					<li><a class='press-link' href='https://vimeo.com/86583064' target='_blank' rel='noopener'>Food Network</a></li>
+
+				</ul>
+
+				<div class='video-container'>
+					<iframe class='video' src="https://www.youtube.com/embed/ILj0SAIMD0c" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<span id='contact' class='nav-offset'></span>
+			<div class='subscribe'>
+				<div class='contact-div'>
+					<address>
+					Visit us at:<br>
+					info@senorsisig.com<br>
+					601 Mission St<br>
+					San Francisco, California<br>
+					94105<br>
+					(855) 747-4455
+					</address>
+				</div>
+
+				<div class='subscribe-div'>
+					<h3>Stay Updated</h3>
+					<h5>Subscribe to our newsletter for the weekly schedule, exclusive deals, and more.</h5>
+					<div class='subscribe-action'>
+						<input class='subscribe-input' type='email' placeholder="Email">
+						<button class='subscribe-button'>Subscribe</button>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<p class='social-media'>
+					<a href='https://twitter.com/senorsisig' target='_blank'><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+					<a href='https://www.instagram.com/senorsisig/' target='_blank' rel='noopener'><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+					<a href='https://www.yelp.com/biz/señor-sisig-san-francisco-3' target='_blank' rel='noopener'><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></a>
+				</p>
+
+				<p class='copyright'>Site by <a href='#' target='_blank' rel='noopener'>TangoEcho Design</a> &copy; All Rights Reserved</p>
+			</footer>
+
+		</div> <!-- close container div -->
+
+		<script src='js/script.js'></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
