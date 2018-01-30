@@ -284,6 +284,7 @@ figcaption{
 
 .calendar h3 {
 	color: #261224;
+	font-size: 1.5rem;
 }
 
 .map-container {
@@ -476,6 +477,8 @@ figcaption{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	padding: 2rem .5rem;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
 }
 
 .press-list {
@@ -499,7 +502,7 @@ figcaption{
 .press-link {
 	display: block;
 	text-decoration: none;
-
+	font-size: 1.4rem;
 	color: rgba(255, 255, 255, .7);
 	
 	transition: all .3s ease;
