@@ -83,6 +83,9 @@ if (window.matchMedia('(max-width: 799px)').matches){
 	})
 }
 
+
+// this is not working yet! i want to control how the modals are displayd
+// (same as above) if the user resizes the broswer
 window.addEventListener('resize', function(){
 	var mqL = window.matchMedia('(min-width: 800px)').matches;
 

@@ -178,6 +178,8 @@ h3:nth-of-type(2) {
 .about-figure{
 	max-width: 100%;	
 	margin-top: 1.36rem;
+	display: flex;
+	justify-content: center;
 }
 
 .about-img {
@@ -709,7 +711,7 @@ footer {
 @media screen and (min-width: 800px){
 	.about {
 		display: grid;
-		grid-template-columns: 60% 40%;
+		grid-template-columns: 55% 45%;
 	}
 
 	.menu-text {
