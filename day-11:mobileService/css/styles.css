@@ -279,7 +279,7 @@ figcaption{
 	max-width: 1000px;
 	margin: 2rem auto 2rem auto;
 	border-top: 1px solid #4756A4;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .calendar h3 {
@@ -290,7 +290,7 @@ figcaption{
 .map-container {
 	min-width: 400px;
 	max-width: 500px;
-	margin: 2rem auto;
+	margin: 2rem auto 1rem auto;
 	
 	position: relative;
 	height: 0;
