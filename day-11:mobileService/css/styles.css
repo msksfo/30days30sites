@@ -183,9 +183,8 @@ h3:nth-of-type(2) {
 .about-img {
 	max-width: 100%;
 	border: 1px solid black;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50% -50%);
+	display: block; 
+	margin: 0 auto;
 }
 
 .sisig-text {
