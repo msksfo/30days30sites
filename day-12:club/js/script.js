@@ -24,6 +24,14 @@ for (let i = 0; i < links.length; i++){
 	})
 }
 
+// close mobile menu and submenu if user resizes browser while they were open 
+window.addEventListener('resize', function(){
+	if (window.innerWidth >= 700){
+		hideSubmenu();
+		mobileMenu.style.display = 'none'
+	}
+})
+
 /*
 
 for (let i = 0; i < mobileLinks.length; i++){
