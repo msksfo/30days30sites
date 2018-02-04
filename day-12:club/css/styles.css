@@ -58,9 +58,13 @@ header {
 	background-position: center center;
 	min-height: 126px;
 
-	position relative;
-	position: sticky;
-	top: 0;
+	position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -o-sticky;
+		position: -ms-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 2;
 }
 
 .header-div {
@@ -191,8 +195,13 @@ h1 {
 	max-width: 1100px;
 	padding: 1rem 0;
 
-	position: sticky;
-	top: 0;
+	position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -o-sticky;
+		position: -ms-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 2;
 }
 
 nav a {
@@ -331,7 +340,6 @@ section {
 }
 
 .newsletter {
-	outline 1px solid red;
 	text-align: center;
 }
 
