@@ -1,0 +1,10 @@
+body {
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+
+html {
+	background-image: url('../images/sunset.jpg');
+	background-size: cover;
+	background-position: top center;
+}
