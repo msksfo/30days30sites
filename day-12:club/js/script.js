@@ -14,13 +14,24 @@ hamburgerIcon.addEventListener('click', function(){
 });
 
 closeButton.addEventListener('click', function(){
+	for (let k = 0; k < mobileLinks.length; k++){
+		mobileLinks[k].style.backgroundColor = 'rgba(22, 105, 135, .98)';
+	}
 	mobileMenu.style.display = 'none';
-	//hideSubmenu();
+	hideSubmenu();
 });
 
+
+// if the user clicks ANY link, close all nested submenus, and the mobile menu
 for (let i = 0; i < links.length; i++){
 	links[i].addEventListener('click', function(){
+		
+		for (let k = 0; k < mobileLinks.length; k++){
+			mobileLinks[k].style.backgroundColor = 'rgba(22, 105, 135, .98)';
+		}
+		
 		mobileMenu.style.display = 'none';
+		hideSubmenu();
 	})
 }
 
@@ -32,34 +43,27 @@ window.addEventListener('resize', function(){
 	}
 })
 
-/*
 
+// if the link that user clicked has a submenu, open/close it (by toggling the class of hidden)
 for (let i = 0; i < mobileLinks.length; i++){
-	mobileLinks[i].addEventListener('mouseenter', function(){
+	mobileLinks[i].addEventListener('click', function(){
 				
 		if (this.classList.contains('submenu')){
+			
 			this.nextElementSibling.classList.toggle('hidden');
-		}
+			
+			if (this.nextElementSibling.classList.contains('hidden')){
+				this.style.backgroundColor = 'rgba(22, 105, 135, .98)';
+				
+			} else {
+				this.style.backgroundColor = 'rgba(68, 183, 225, .8)';
+			}
+		} 
 	})
 }
 
-for (let i = 0; i < mobileLinks.length; i++){
-	mobileLinks[i].addEventListener('mouseleave', function(){
-				
-		if (this.classList.contains('submenu')){
-			this.nextElementSibling.classList.toggle('hidden');
-		}
-	})
-}
-*/
 
-function showSubmenu(){
-	hideSubmenu();
-	for (let i = 0; i < mobileLinks.length; i++){
-		
-	}
-}
-
+// hide all of the nested submenus
 function hideSubmenu(){
 	for (let i = 0; i < subMenus.length; i ++){
 		subMenus[i].classList.add('hidden');

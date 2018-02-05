@@ -119,16 +119,17 @@ h1 {
 
 .mobile-menu {
 	display: none;
-	position absolute;
 	position: relative;
 	padding-top: 32px;
 	width: 100%;
 	background-color: rgba(22, 105, 135, .98);
 }
 
-.mobile-menu li:hover > * {  /* alternative to javascript???? */
+/*
+.mobile-menu li:hover > * {   alternative to javascript???? 
 	display: block;
 }
+*/
 
 #close-button {
 	font-size: 2rem;
@@ -145,7 +146,7 @@ h1 {
 }
 
 .mobile-menu a {
-	display: inline-block;
+	display: block;
 	text-decoration: none;
 	color: #eee;
 	font-size: 1.3rem;
@@ -154,7 +155,7 @@ h1 {
 }
 
 .mobile-menu a:hover {
-	background-color: rgba(68, 183, 225, .8);
+	background-color: rgba(68, 183, 225, .8) !important;
 }
 
    /* MOBILE SUBMENU */
@@ -173,7 +174,7 @@ h1 {
 }
 
 .mobile-submenu a {
-	display: inline-block;
+	display: block;
 	text-decoration: none;
 	color: #166987;
 	font-size: 1.3rem;
@@ -183,7 +184,7 @@ h1 {
 
 .mobile-submenu a:hover {
 	color: #166987;
-	background-color: #eee;
+	background-color: #eee !important;
 }
 
 /* ============================ nav bar ================================ */
