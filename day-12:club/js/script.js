@@ -14,10 +14,13 @@ hamburgerIcon.addEventListener('click', function(){
 });
 
 closeButton.addEventListener('click', function(){
+	// put the background color of all mobile links back to non hover color
 	for (let k = 0; k < mobileLinks.length; k++){
 		mobileLinks[k].style.backgroundColor = 'rgba(22, 105, 135, .98)';
 	}
+	// hide the mobile menu
 	mobileMenu.style.display = 'none';
+	// hide all sub menus
 	hideSubmenu();
 });
 
@@ -25,7 +28,7 @@ closeButton.addEventListener('click', function(){
 // if the user clicks ANY link, close all nested submenus, and the mobile menu
 for (let i = 0; i < links.length; i++){
 	links[i].addEventListener('click', function(){
-		
+		// put the background color of all mobile links back to non hover color
 		for (let k = 0; k < mobileLinks.length; k++){
 			mobileLinks[k].style.backgroundColor = 'rgba(22, 105, 135, .98)';
 		}
