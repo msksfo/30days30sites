@@ -1,0 +1,95 @@
+body {
+	box-sizing: border-box;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	margin-top: 0;
+	font-family: 'Chango', cursive;
+	margin-right: .5rem;
+	font-size: 3rem;
+	background: url('../images/inca-pattern.jpg');
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   position relative
+}
+
+span {
+	display: block;
+	background: url('../images/inca-pattern.jpg');	
+	background-position: 5% 20%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	/*
+	position: absolute;
+	left: 600px;
+	animation: slide .5s forwards;
+	animation-delay: 1.2s;
+	*/
+}
+
+@keyframes slide {
+	 100% { left: 0; }; 
+}
+
+.bounceInRight {
+	animation-delay: 1s;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+figure {
+	max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+@media screen and (min-width: 700px){
+
+	div {
+		flex-direction: row;
+	}
+
+	h1 {
+		font-size: 4rem;
+		background-position: 5% 4%;
+		color: #3e2a40;
+	}
+
+	span {
+		background-position: 5% 25%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Day 13</title>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
+
+		<!-- animate.css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		
+		<!-- font awesome -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+		<link type='text/css' rel='stylesheet' href='css/main.css'>
+	</head>
+
+	<body>
+		<header id='header'>
+
+			<nav class='mobile-nav'>
+				<div class='logo'>
+					<img id='mobile-logo-img' src='images/logo.jpg' alt='logo'>
+				</div>
+			</nav>
+
+			<div id='mobile-nav-all' class='mobile-nav-all hidden'>
+				<ul id='mobile-links' class='mobile-links'>
+					<li><a href='#header'>HOME</a></li>
+					<li><a id='mobile-products-link' href='#products'>PRODUCTS</a></li>
+					<li><a class='close-products' href='#about'>OUR STORY</a></li>
+					<li><a class='close-products' href='#shop'>WHERE TO BUY</a></li>
+
+					<li><div class='social-mobile close-products'>
+						<a href=''><i class="fab fa-facebook-square"></i></a>
+						<a href=''><i class="fab fa-twitter-square"></i></a>
+						<a href=''><i class="fab fa-instagram"></i></a>
+					</div></li>
+				</ul>
+			</div>
+
+			<nav class='standard-nav'>
+				<ul>
+					<li><a id='products-link' href='#products'>PRODUCTS</a></li>
+					<li><a class='close-products' href='#about'>OUR STORY</a></li>
+
+					<li><div class='logo close-products'>
+						<img id='logo-img' src='images/logo.jpg' alt='logo'>
+					</div></li>
+
+					<li><a class='close-products' href='#shop'>WHERE TO BUY</a></li>
+
+					<li><div class='social close-products'>
+						<a href=''><i class="fab fa-facebook-square"></i></a>
+						<a href=''><i class="fab fa-twitter-square"></i></a>
+						<a href=''><i class="fab fa-instagram"></i></a>
+					</div></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class='products' id='products-div'>
+			<figure class='product-figure'>
+				<img src='images/product.jpg' alt='inca cola can'>
+				<figcaption>Inca Cola</figcaption>
+			</figure>
+
+			<figure class='product-figure'>
+				<img src='images/product.jpg' alt='inca cola can'>
+				<figcaption>Diet Inca Cola</figcaption>
+			</figure>
+			<figure class='product-figure'>
+				<img src='images/product.jpg' alt='inca cola can'>
+				<figcaption>Caffeine Free Inca Cola</figcaption>
+			</figure>
+			<figure class='product-figure'>
+				<img src='images/product.jpg' alt='inca cola can'>
+				<figcaption>Sugar Free Inca Cola</figcaption>
+			</figure>
+			
+		</div> <!-- close products div -->
+
+		<div id='hidden'>
+
+			<div class='hero-img'>
+				<img src='images/flavorOfPeru.png' alt='Inca Kola advertisement on side of building in Peru'>
+			</div>
+
+			<div class='about-bg' id='about'>
+
+				<div class='about'>
+
+					<div class='founder'>		
+						<h3>Mr. Cuzco</h3>
+						<h4>Inca Cola Founder</h4>	
+
+						<figure class='founder-figure'>
+							<img class='founder-img' src='images/founder.png' alt='Image of Inca Kola founder, Mr. Cuzco'>
+						</figure>
+
+						<div class='about-founder'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora natus iusto sint ea, laboriosam temporibus aperiam, aut! Earum dicta repellendus ullam laboriosam, debitis modi architecto alias a voluptatum, quos, assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci neque natus iste autem ipsam cupiditate, amet sint iure voluptatem dolores, ab commodi architecto qui. Non eveniet ab, rerum iusto autem.</p>
+						</div>
+					</div> <!-- close div .founder -->
+
+					<div class='community'>
+						<h3>Community Involvement</h3>
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<figure class='community-figure'>
+							<img class='community-img' src='images/community.jpg' alt='Local children of Peru'>
+						</figure>
+						<div class='about-community'>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam omnis obcaecati laudantium. Voluptatibus dolore voluptas pariatur impedit. Quo officiis doloremque laudantium aliquid labore sint hic commodi suscipit rem, iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ut dolorum ea ex nulla! Quos cum, a dolor et! Hic minima, reiciendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium, harum dolorem similique! Modi fuga magni incidunt totam repellendus, sint quo animi minus fugiat dolores facere veritatis ad laborum adipisci.Harum temporibus neque, beatae totam eveniet quibusdam saepe!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora natus iusto sint ea, laboriosam temporibus aperiam, aut! Earum dicta repellendus ullam laboriosam, debitis modi architecto alias a voluptatum, quos, assumenda.</p>
+						</div>
+					</div> <!-- close div .community -->
+
+				</div> <!--- close .about div -->
+
+			</div> <!-- close div .about-bg -->
+			
+
+			<div id='shop' class='shop'>
+
+				<div class='where-to-buy'>
+					<h3>Where to Buy</h3>
+					<p>
+						<label>Enter Zipcode</label>
+						<input type='text'>
+					</p>
+					<select>
+						<option>Choose Product</option>
+						<option>Drink 1</option>
+						<option>Drink 2</option>
+						<option>Drink 3</option>
+						<option>Drink 4</option>
+						<option>Drink 5</option>
+					</select>
+
+					<select>
+						<option>Choose Flavor</option>
+						<option>Flavor 1</option>
+						<option>Flavor 2</option>
+						<option>Flavor 3</option>
+						<option>Flavor 4</option>
+						<option>Flavor 5</option>
+					</select>
+				</div> <!-- close div .where-to-buy -->
+
+				<div class='map-container'>
+					<img class='map' src='images/map.png' alt='world map'>
+				</div>
+
+			</div> <!-- close div .shop -->
+
+
+			<div class='sponsorship'>
+				<div class='sponsorship-inner'>
+					<h4>Proudly sponsoring our home team since 1475!</h4>
+					<div class='team-about'>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi inventore reprehenderit tenetur numquam hic porro, at illum, dolorum quisquam consequatur sint facere officia esse voluptatem ratione nisi error cupiditate officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consectetur possimus, odio excepturi, accusamus sed aspernatur optio, perspiciatis neque ut ullam quos. Inventore animi earum officia minus cum. Maiores, dolorum.
+						</p>
+						<q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit consectetur possimus, odio!</q>
+					</div>
+
+					<div class='team-action'>
+						<img src='images/soccer.jpg' alt='Soccer team in action'>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class='footer-container'>
+					<ul class='footer-menu'>
+						<li><a href=''>Our Mission</a></li>
+						<li><a href=''>Become A Retailer</a></li>
+						<li><a href=''>Donation/Sponsorship Requests</a></li>
+						<li><a href=''>Join Us</a></li>
+						<li><a href=''>Contact Us</a></li>
+					</ul>
+
+					<form>
+						<h3>Subscribe to our Newsletter</h3>
+						<div class='email-zip'>
+							<p>
+								<label>Email</label>
+								<input type='email'>
+							</p>
+
+							<p>
+								<label>Zip Code</label>
+								<input type='text'>
+							</p>
+						</div>
+
+						<p>
+							<label>Your Date of Birth</label>
+							
+							<select>
+								<option>Month</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>0</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+
+							<select>
+								<option>Day</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>0</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+
+							<select>
+								<option>Year</option>
+								<option>2000</option>
+								<option>1999</option>
+								<option>1998</option>
+								<option>1997</option>
+								<option>1996</option>
+								<option>1995</option>
+								<option>1994</option>
+								<option>1993</option>
+								<option>1992</option>
+								<option>1991</option>
+								<option>1990</option>
+								<option>1989</option>
+							</select>
+							
+						</p>
+
+						<p>
+							<input type='checkbox'>
+							<label>I have read the <a class='privacy' href=''>privacy policy</a></label>
+						</p>
+
+						<p class='submit'>
+							<button class='submit-button'>Submit</button>
+						</p>
+					</form>
+				</div>
+			</footer>
+
+		</div> <!-- close div .hidden -->
+
+		<script src='js/script.js'></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
