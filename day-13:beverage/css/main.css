@@ -20,14 +20,17 @@ a {
 header {
 	background: #fff;
 	margin: 1rem 0;
-
 	padding: .5rem 0;
 	font-size: 1.1rem;
 	letter-spacing: .3px;
 
-	position: sticky;
-	top: 0;
-	z-index: 100;
+	position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -o-sticky;
+		position: -ms-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 100;
 	transition: .5s ease;
 }
 
