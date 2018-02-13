@@ -25,6 +25,8 @@ Day 11 link ~ https://msksfo.github.io/30days30sites/day-11:mobileService/index.
 
 Day 12 link ~ https://msksfo.github.io/30days30sites/day-12:club/index.html
 
+Day 13 link ~ https://msksfo.github.io/30days30sites/day-6:beverage/index.html
+
 
 
 
