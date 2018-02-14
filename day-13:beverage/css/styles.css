@@ -23,18 +23,8 @@ h1 {
 	background-position: 5% 20%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	
-	/*
-	position: absolute;
-	left: 600px;
-	animation: slide .5s forwards;
-	animation-delay: 1.2s;
-	*/
 }
 
-@keyframes slide {
-	 100% { left: 0; }; 
-}
 
 .bounceInRight {
 	animation-delay: 1s;
@@ -42,6 +32,7 @@ h1 {
 
 a {
 	text-decoration: none;
+	overflow: hidden;
 }
 
 
