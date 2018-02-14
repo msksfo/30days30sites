@@ -193,7 +193,6 @@ figcaption {
 /* ============================ about section ======================== */
 
 .about-bg {
-	margin-top: 3rem;
 	background-image: url('../images/about-bg75.jpg');
 	padding: 5rem 0;
 }
@@ -417,6 +416,10 @@ footer select {
 
 	nav {
 		display: flex;
+	}
+
+	.about-bg {
+		margin-top: 3rem;
 	}
 
 	.products figure {
