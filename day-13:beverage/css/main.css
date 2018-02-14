@@ -1,7 +1,5 @@
 body {
 	box-sizing: border-box;
-	min-height 100vh;
-
 	min-height: 100%;
 	font-size: 18px;
 	margin: 0;
@@ -33,6 +31,16 @@ header {
 		z-index: 100;
 	transition: .5s ease;
 }
+
+/* ======== navigation offset needed because of position sticky on header ======= */
+
+.nav-offset {
+	display: block;
+	visibility: hidden;
+	height: 110px;
+	margin-top: -110px;
+}
+
 
 /* ================ mobile navigation ==================== */
 
