@@ -25,6 +25,11 @@ a {
 	--main-black: #3a2d32;
 }
 
+.wrapper {
+	max-width: 100%;
+	overflow: hidden;
+}
+
 /* ============ nav offset div equal to height of fixed header ============ */
 
 .nav-offset {
@@ -758,7 +763,7 @@ li.title h2 {
 }
 
 .search-topic {
-	position: relative;
+	position relative;
 	padding-top: 18.7px;
 	padding-bottom: 50px;
 	background-color: #f3fbf6;
@@ -801,7 +806,7 @@ li.title h2 {
 
 .topics {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 20px;
 }
 
