@@ -27,6 +27,8 @@ Day 12 link ~ https://msksfo.github.io/30days30sites/day-12:club/index.html
 
 Day 13 link ~ https://msksfo.github.io/30days30sites/day-13:beverage/index.html
 
+Day 14 link ~ https://msksfo.github.io/30days30sites/day-14:printing-company/index.html
+
 
 
 
