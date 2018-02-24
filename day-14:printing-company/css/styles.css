@@ -25,11 +25,6 @@ a {
 	--main-black: #3a2d32;
 }
 
-.wrapper {
-	max-width: 100%;
-	overflow: hidden;
-}
-
 /* ============ nav offset div equal to height of fixed header ============ */
 
 .nav-offset {
@@ -78,13 +73,13 @@ a {
 	transition: .3s ease;
 	transform: translateY(0);
 	visibility: hidden;
-	width: 100%;               /* why isnt this working ???? */
 
-	top: 85%;
+	width: 100%;     
 	top: 100%;
 	left: 0;
-	padding: 10px;
-	z-index: 1;
+
+	padding: 10px 0; /* why cant i add padding to the sides???? */
+	z-index: 10;
 	background: #1e8071;
 }
 
@@ -96,9 +91,8 @@ a {
 .mobile-search-input {
 	outline: none;
 	display: block;
-	padding: 5px;
-
-	width: 90%;
+	padding: 7px;
+	width: 80%;
 	margin: 0 auto;
 }
 
