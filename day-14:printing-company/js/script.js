@@ -1,4 +1,5 @@
 /* ================ VARIABLES ================= */
+var mq = window.matchMedia("(min-width: 700px)");
 
 /* ===== mobile navigation ===== */
 var searchIcon = document.getElementById('search-icon');
@@ -31,6 +32,7 @@ var supportButton = document.getElementById('support-button');
 var supportSearchText = document.getElementById('support-search-text');
 
 /* ============= event listeners =============== */
+
 
 // 
 mobileLogo.addEventListener('click', function(){
@@ -156,6 +158,18 @@ supportSearchText.addEventListener('keypress', function(e){
 		document.getElementById('support-search-text').value = '';
 	}
 });
+
+window.addEventListener('resize', function(){
+	if (mq){
+		 mobileProductsDropdown.classList.remove('display-mobile-products-dropdown');
+		 mobileAccountDropdown.classList.remove('display-mobile-account-dropdown');
+		 mobileDropdown.classList.remove('display-dropdown');
+
+		 mobileSearchDropdown.classList.remove('display-mobile-search-dropdown');
+		 clearMobileSearchInput();
+	}
+})
+
 
 /* ================= functions ================ */
 
