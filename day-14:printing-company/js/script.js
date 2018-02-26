@@ -86,8 +86,10 @@ mobileAccountLink.addEventListener('click', function(){
 	mobileAccountDropdown.classList.toggle('display-mobile-account-dropdown');
 });
 
-// listener for standard width navigation search
+// listener for search dropdown, standard width navigation 
+searchDropdown.style.display = 'none'; // do this otherwise function wont work until second click
 search.addEventListener('click', function(){
+	//console.log(searchDropdown.style.display);
 	clearSearchInput();
 	toggleHidden(searchDropdown);
 });
@@ -159,6 +161,8 @@ supportSearchText.addEventListener('keypress', function(e){
 	}
 });
 
+
+// close all mobile dropdowns if/when user resizes browser to width > 700px
 window.addEventListener('resize', function(){
 	if (mq){
 		 mobileProductsDropdown.classList.remove('display-mobile-products-dropdown');
@@ -168,7 +172,7 @@ window.addEventListener('resize', function(){
 		 mobileSearchDropdown.classList.remove('display-mobile-search-dropdown');
 		 clearMobileSearchInput();
 	}
-})
+});
 
 
 /* ================= functions ================ */
