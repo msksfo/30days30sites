@@ -703,6 +703,7 @@ li.title h2 {
 	display: block;
 	border: 1px solid #d30c7b;
 	outline: none;
+	background: #fff;
 	color: #d30c7b;
 	border-radius: 8px;
 	transition: .3s ease;
