@@ -1,4 +1,4 @@
-# 30days30sites
+30days30sites
 My projects from the codelegy challenge to build 30 sites in 30 days.
 
 Day 1 link ~ https://msksfo.github.io/30days30sites/day-1:portfolio-with-bootstrap/index.html
@@ -29,6 +29,7 @@ Day 13 link ~ https://msksfo.github.io/30days30sites/day-13:beverage/index.html
 
 Day 14 link ~ https://msksfo.github.io/30days30sites/day-14:printing-company/index.html
 
+Day 15 link ~ https://msksfo.github.io/30days30sites/day-15:motivational-speaker/index.html
 
 
 
