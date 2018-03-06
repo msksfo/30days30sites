@@ -376,6 +376,8 @@ footer {
 
 footer ul {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0 0 2rem 0;
@@ -389,6 +391,7 @@ footer ul a {
 	padding-right: 1rem;
 	border-right: 1px solid #eee;
 	margin-right: 1rem;
+	margin-bottom: 1rem;
 }
 
 
