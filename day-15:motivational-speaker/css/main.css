@@ -391,6 +391,7 @@ footer ul a {
 	margin-right: 1rem;
 }
 
+
 .copyright a {
 	color: #eee;
 }
@@ -401,6 +402,7 @@ footer a:hover {
 
 .last-item {
 	padding-right: 0;
+	margin-right: 0;
 	border-right: 0;
 }
 
